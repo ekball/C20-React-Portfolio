@@ -88,13 +88,14 @@ ul {
   list-style-type: none;
 }
 
-a:link {
+.resume-link {
   color: rgb(219, 228, 238);
-  background-color: transparent;
-  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-a:visited {
+a:link, a:visited {
   color: rgb(219, 228, 238);
   background-color: transparent;
   text-decoration: none;
@@ -111,6 +112,17 @@ a:hover {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+}
+
+.resume-section {
+  background-color:rgb(129, 164, 205);
+}
+
+.resume-title {
+  color: #054A91;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 

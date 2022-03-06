@@ -4,7 +4,6 @@ import Projects from '../Projects';
 import About from '../About';
 import Resume from '../Resume';
 import Contact from '../Contact';
-import Footer from '../Footer';
 
  function Portfolio() {
 
@@ -31,6 +30,7 @@ import Footer from '../Footer';
       return <Contact />;
     }
 
+    // otherwise, default the page to the about section
     return <About />;
   };
 
@@ -46,9 +46,6 @@ import Footer from '../Footer';
         {renderPage()}
 
       </div>
-
-      <Footer>
-      </Footer>
 
     </div>
   );

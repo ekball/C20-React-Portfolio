@@ -1,8 +1,9 @@
 import './App.css';
 import React from 'react';
 import Portfolio from './components/Portfolio';
+import Footer from './components/Footer';
 
-const App = () => <Portfolio />;
+// const App = () => <Portfolio />;
   // return (
 //     <div>
 //       {/* header containing nav section */}
@@ -34,5 +35,17 @@ const App = () => <Portfolio />;
 
 //   );
 // }
+
+function App () {
+
+   return (
+     <div>
+      <Portfolio />
+
+      <Footer/>
+    </div>
+   );
+} 
+
 
 export default App;

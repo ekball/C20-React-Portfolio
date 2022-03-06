@@ -3,8 +3,10 @@ import React from "react";
 function Resume() {
 
     return(
-        <div>
-            <h1>Resume</h1>
+        <div className="resume-section">
+            <h1 className="resume-title">Resume</h1>
+
+            <a href='../assets/docs/resume.pdf' download className="resume-link">Click here to download a copy of my resume</a>
         </div>
     );
 }
