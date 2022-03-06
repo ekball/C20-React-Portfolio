@@ -3,12 +3,14 @@ import React from "react";
 function Footer() {
 
     return(
-        <div>
-            <h2>Email</h2>
+        <div className="footer-section">
 
-            <h2>GitHub</h2>
+            <a href='https://github.com/ekball' className="footer-link">GitHub</a>
 
-            <h2>LinkedIn</h2>
+            <a href='mailto:ekylesball@gmail.com' className="footer-link">ekylesball24@gmail.com</a>
+
+            <a href='www.linkedin.com/in/kyles-ball-57a508223' className="footer-link">LinkedIn</a>
+        
         </div>
     );
 }

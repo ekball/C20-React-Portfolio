@@ -80,6 +80,8 @@ label {
 
 .contact-button {
   background-color:rgb(241, 115, 0);
+  margin: 10px;
+  margin-bottom: 15px;
 }
 
 ul {
@@ -104,14 +106,18 @@ a:hover {
   text-decoration: underline;
 }
 
+.footer-section{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
+
 /* .project-1 {
   background: 50%;
   background-image: url("../images/movie-match-screenshot.png");
   flex: 3;
 } */
 
-.button-images {
-  width: auto;
-  height: 300px;
-  margin-bottom: 50px;
-}

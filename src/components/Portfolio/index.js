@@ -4,6 +4,7 @@ import Projects from '../Projects';
 import About from '../About';
 import Resume from '../Resume';
 import Contact from '../Contact';
+import Footer from '../Footer';
 
  function Portfolio() {
 
@@ -37,10 +38,18 @@ import Contact from '../Contact';
 
   return (
     <div>
-      
-      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
 
-      {renderPage()}
+      <div>
+
+        <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+
+        {renderPage()}
+
+      </div>
+
+      <Footer>
+      </Footer>
+
     </div>
   );
 }
