@@ -1,33 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import Header from './components/Header';
+import About from './components/About';
+import Projects from './components/Projects';
+import Resume from './components/Resume';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+
 
 function App() {
   return (
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
-
     <div>
-      {/* header section containing nav */}
-      <header className='header'>
-
-        <Nav>
-        </Nav>
-
-      </header>
+      {/* header containing nav section */}
+        <Header>
+        </Header>
 
       {/* main section containing About Me, Projects, Resume, and Contact Me */}
       <main className='main'>
@@ -38,17 +24,17 @@ function App() {
         <Projects className='projects'>
         </Projects>
 
-        <Resume className='resume'>
+       {/*  <Resume className='resume'>
         </Resume>
 
         <Contact className='contact'>
-        </Contact>
+        </Contact> */}
 
       </main>
+{/* 
+      <Footer className='footer'>
+      </Footer> */}
 
-      <footer className='footer'>
-
-      </footer>
     </div>
 
   );

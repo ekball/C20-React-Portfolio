@@ -1,6 +1,6 @@
 import React from "react";
 
-function Footer() {
+function Resume() {
 
     return(
         <div>
@@ -9,4 +9,4 @@ function Footer() {
     );
 }
 
-export default Footer;
+export default Resume;

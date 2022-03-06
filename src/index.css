@@ -11,3 +11,62 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.header{
+  background-color: #054A91;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+ul {
+  list-style-type: none;
+  
+}
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.page-anchors{
+  justify-content: start;
+}
+
+a:link {
+  color: rgb(219, 228, 238);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(219, 228, 238);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(241, 115, 0);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+/* .project-1 {
+  background: 50%;
+  background-image: url("../images/movie-match-screenshot.png");
+  flex: 3;
+} */
+
+.button-images {
+  width: auto;
+  height: 300px;
+  margin-bottom: 50px;
+}
