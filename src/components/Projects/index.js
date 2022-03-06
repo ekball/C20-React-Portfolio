@@ -2,10 +2,6 @@ import React from 'react';
 import photo from "../../assets/images/movie-match-screenshot.png"
 
 function Projects (props) {
-    
-    const currentProject = {
-         name: "Movie Match"
-    }
 
     return(
 
@@ -56,16 +52,10 @@ function Projects (props) {
         // </section>
 
         
-
         <section>
-            <h2>{currentProject.name}</h2>
-            <div className='flex-row'>
-                <img 
-                    src={photo}
-                    alt="Movie Match Project"
-                    className='button-images'
-                />
-            </div>
+            
+            <h1>Projects</h1>
+            
         </section>
 
 

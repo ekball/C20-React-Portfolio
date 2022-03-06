@@ -1,5 +1,6 @@
 import './App.css';
 import React from 'react';
+import Portfolio from './components/Portfolio';
 import Header from './components/Header';
 import About from './components/About';
 import Projects from './components/Projects';
@@ -8,36 +9,37 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 
-function App() {
-  return (
-    <div>
-      {/* header containing nav section */}
-        <Header>
-        </Header>
+const App = () => <Portfolio />;
+  // return (
+//     <div>
+//       {/* header containing nav section */}
+//         <Header>
+//         </Header>
 
-      {/* main section containing About Me, Projects, Resume, and Contact Me */}
-      <main className='main'>
+//       {/* main section containing About Me, Projects, Resume, and Contact Me */}
+//       <main className='main'>
 
-        <About className='about'>
-        </About>
+//         <About className='about'>
+//         </About>
 
-        <Projects className='projects'>
-        </Projects>
+//         <Projects className='projects'>
+//         </Projects>
 
-       {/*  <Resume className='resume'>
-        </Resume>
+//        {/*  <Resume className='resume'>
+//         </Resume>
 
-        <Contact className='contact'>
-        </Contact> */}
+//         <Contact className='contact'>
+//         </Contact> */}
 
-      </main>
-{/* 
-      <Footer className='footer'>
-      </Footer> */}
+//       </main>
+// {/* 
+//       <Footer className='footer'>
+//       </Footer> */}
 
-    </div>
+//     </div>
 
-  );
-}
+
+//   );
+// }
 
 export default App;
