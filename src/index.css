@@ -12,33 +12,78 @@ code {
     monospace;
 }
 
-.header{
-  background-color: #054A91;
-  min-height: 10vh;
+div {
+  background-color: rgb(62, 124, 177);;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+}
+
+.about-section {
+  background-color:rgb(129, 164, 205);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.about-section p {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.about-title{
+  color: #054A91;;
+}
+
+.contact-section {
+  background-color:rgb(129, 164, 205);
+}
+
+.contact-title {
+  color: #054A91;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  background-color:rgb(129, 164, 205);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
   font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+}
+
+.contact-section div {
+  margin: 5px;
+}
+
+label {
+  color: #054A91;
+}
+ 
+.message-box-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+} 
+
+.contact-button {
+  background-color:rgb(241, 115, 0);
 }
 
 ul {
   list-style-type: none;
-  
-}
-
-.flex-row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-li {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.page-anchors{
-  justify-content: start;
 }
 
 a:link {

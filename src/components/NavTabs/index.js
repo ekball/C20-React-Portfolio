@@ -67,6 +67,7 @@ function NavTabs({ currentPage, handlePageChange }) {
 
     <ul className="nav nav-tabs">
 
+      {/*  navigation tab to the about section */}
       <li className="nav-item">
         <a
           href="#about"
@@ -79,6 +80,7 @@ function NavTabs({ currentPage, handlePageChange }) {
         </a>
       </li>
 
+      {/*  navigation tab to the projects section */}
       <li className="nav-item">
         <a
           href="#projects"
@@ -91,6 +93,7 @@ function NavTabs({ currentPage, handlePageChange }) {
         </a>
       </li>
 
+      {/*  navigation tab to the resume section */}
       <li className="nav-item">
         <a
           href="#resume"
@@ -103,6 +106,7 @@ function NavTabs({ currentPage, handlePageChange }) {
         </a>
       </li>
 
+      {/*  navigation tab to the contact section */}
       <li className="nav-item">
         <a
           href="#contact"

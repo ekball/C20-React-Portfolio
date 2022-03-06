@@ -12,11 +12,12 @@ function Header(props) {
 
     return(
 
-        <div>
+        <div className="header">
             <Nav
                 nav={nav}
                 currentNav={currentNav}
                 setCurrentNav={setCurrentNav}
+                className='nav-tabs'
             >
             </Nav>
         </div>

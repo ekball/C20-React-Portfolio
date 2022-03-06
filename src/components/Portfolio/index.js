@@ -29,6 +29,8 @@ import Contact from '../Contact';
     if (currentPage === 'Contact') {
       return <Contact />;
     }
+
+    return <About />;
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
