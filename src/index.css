@@ -125,6 +125,73 @@ a:hover {
   justify-content: center;
 }
 
+.projects-section {
+  background-color:rgb(129, 164, 205);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #054A91;
+}
+
+.projects-section div {
+  background-color:rgb(129, 164, 205);  
+}
+
+.projects-top-row, .projects-middle-row, .projects-bottom-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 15px;
+}
+
+.projects-one, .projects-three, .projects-five {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  margin: 15px;
+}
+
+.projects-two, .projects-four, .projects-six {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  margin: 15px;
+}
+
+.projects-button-one-site, .projects-button-one-repo,
+.projects-button-two-site, .projects-button-two-repo,
+.projects-button-three-site, .projects-button-three-repo,
+.projects-button-five-site, .projects-button-five-repo,
+.projects-button-six-site, .projects-button-six-repo {
+  font-size: large;
+  color: black;
+  font-weight: 900;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.projects-button-four-site, .projects-button-four-repo {
+  font-size: large;
+  color: white;
+  font-weight: 900;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+button:hover {
+  color: rgb(241, 115, 0);
+  background-color: black;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
 
 
 /* .project-1 {
