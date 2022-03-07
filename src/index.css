@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: fantasy, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -12,17 +12,31 @@ code {
     monospace;
 }
 
-div {
-  background-color: rgb(62, 124, 177);;
-}
-
 .nav {
+  color: rgb(62, 124, 177);
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  font-size: calc(10px + 2vmin);
+}
+
+.name {
+  padding: 0;
+  margin: 0px;
+  color: rgb(241, 115, 0);
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-decoration: underline;
   font-size: calc(10px + 2vmin);
   flex-wrap: wrap;
+}
+
+.nav-tabs {
+  background-color: #054A91;
 }
 
 .about-section {
@@ -31,15 +45,31 @@ div {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100vmin;
+  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
 }
 
 .about-section p {
   margin-left: 15px;
   margin-right: 15px;
+  color: black;
 }
 
 .about-title{
-  color: #054A91;;
+  display: flex;
+  color: #054A91;
+  font-size: calc(15px + 2vmin);
+  flex-wrap: wrap;
+}
+
+img {
+  display: flex;
+  flex-wrap: wrap;
+  /* height: calc(20px + 35vmin);
+  width:  calc(5px + 35vmin); */
+  height: 200px;
+  width: 100px;
 }
 
 .contact-section {
@@ -51,6 +81,9 @@ div {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: calc(15px + 2vmin);
+  margin-top: 15px;
+  flex-wrap: wrap;
 }
 
 form {
@@ -79,6 +112,7 @@ label {
 } 
 
 .contact-button {
+  display: flex;
   background-color:rgb(241, 115, 0);
   margin: 10px;
   margin-bottom: 15px;
@@ -93,6 +127,9 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: dotted;
+  padding: 5px;
+  font-size: calc(10px + 2vmin);
 }
 
 a:link, a:visited {
@@ -108,21 +145,40 @@ a:hover {
 }
 
 .footer-section{
+  background-color: #054A91;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  font-size: calc(15px + 2vmin);
+  height: 5vh;
+  flex-wrap: wrap;
 }
 
 .resume-section {
   background-color:rgb(129, 164, 205);
+  height: 100vmin;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .resume-title {
   color: #054A91;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  font-size: 3vw;
+  flex-wrap: wrap;
+}
+
+.projects-title {
+  display: flex;
+  font-size: calc(15px + 3vmin);
+  color: #054A91;
+  flex-wrap: wrap;
 }
 
 .projects-section {
@@ -132,6 +188,7 @@ a:hover {
   align-items: center;
   justify-content: space-evenly;
   color: #054A91;
+  flex-wrap: wrap;
 }
 
 .projects-section div {
@@ -141,9 +198,10 @@ a:hover {
 .projects-top-row, .projects-middle-row, .projects-bottom-row {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: start;
   justify-content: space-evenly;
-  margin: 15px;
+  margin: 0;
+  flex-wrap: wrap;
 }
 
 .projects-one, .projects-three, .projects-five {
@@ -151,7 +209,11 @@ a:hover {
   flex-direction: row;
   align-items: center;
   justify-content: start;
-  margin: 15px;
+  margin-top: 0px;
+  margin-bottom: 35px;
+  margin-left: 30px;
+  margin-right: 30px;
+  flex-wrap: wrap;
 }
 
 .projects-two, .projects-four, .projects-six {
@@ -159,7 +221,11 @@ a:hover {
   flex-direction: row;
   align-items: center;
   justify-content: end;
-  margin: 15px;
+  margin-top: 0px;
+  margin-bottom: 35px;
+  margin-left: 30px;
+  margin-right: 30px;
+  flex-wrap: wrap;
 }
 
 .projects-button-one-site, .projects-button-one-repo,
@@ -173,6 +239,7 @@ a:hover {
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .projects-button-four-site, .projects-button-four-repo {
@@ -182,6 +249,7 @@ a:hover {
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 button:hover {
@@ -191,12 +259,12 @@ button:hover {
   cursor: pointer;
 }
 
-
-
-
-/* .project-1 {
-  background: 50%;
-  background-image: url("../images/movie-match-screenshot.png");
-  flex: 3;
-} */
-
+.projects-titles-top, .projects-titles-middle, .projects-titles-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0;
+  text-decoration: underline;
+  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+}

@@ -1,11 +1,13 @@
 import React from 'react';
-
+import Avatar from '../../assets/images/avatar.jpeg';
 
 function About() {
   return (
     <section className='about-section'>
 
       <h1 id="about" className="about-title">About Me</h1>
+
+      <img src={Avatar}/>
 
       <p>
             Hello, my name is Kyles and I am currently a dog trainer at Petco. I have been training dogs for about 3 years now. I graduated from UNC-Chapel Hill in 2017 with a B.A. in German Studies and a minor in Linguistics. 

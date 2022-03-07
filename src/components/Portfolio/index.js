@@ -39,13 +39,9 @@ import Contact from '../Contact';
   return (
     <div>
 
-      <div>
-
         <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
 
         {renderPage()}
-
-      </div>
 
     </div>
   );

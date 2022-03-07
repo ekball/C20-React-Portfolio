@@ -9,103 +9,7 @@ import PasswordGeneratorPhoto from "../../assets/images/password-generator-scree
 
 
 
-function Projects (props) {
-
-    // return(
-
-        // <section className=''>
-
-        //     <h1 className="flex-left">Work</h1>
-
-        //     <div className="">
-
-        //         <a className="project-1">
-
-        //             <a href="https://github.com/gabrielandrews/Group-project-movie-" >Movie Match</a>
-
-        //         </a>
-
-        //         <a className="media-gems">
-
-        //             <a href="https://github.com/KrisSmith7/media-gems" >Media Gems</a>
-
-        //         </a>
-
-        //         <a className="weather-dashboard">
-
-        //             <a href="https://github.com/ekball/C6-Weather-Dashboard" >Weather Dashboard</a>
-
-        //         </a>
-
-        //         <a className="readme-generator">
-
-        //             <a href="https://github.com/ekball/C9-README-Generator" >README Generator</a>
-
-        //         </a>
-
-        //         <a className="note-taker">
-
-        //             <a href="https://github.com/ekball/C11-Note-Taker" >Note Taker</a>
-
-        //         </a>
-
-        //         <a className="password-generator">
-
-        //             <a href="https://github.com/ekball/C3-Password-Generator" >Password Generator</a>
-
-        //         </a>
-
-        //     </div>
-
-        // </section>
-
-        // const projects = [
-        //     {
-        //         name: 'Movie Match',
-        //         site: 'https://gabrielandrews.github.io/Group-project-movie-/',
-        //         repo: 'https://github.com/gabrielandrews/Group-project-movie-',
-        //         image: '../assets/images/movie-match-screeshot.png'
-
-        //     }, 
-        //     {
-        //         name: 'Media Gems',
-        //         site: 'https://gentle-dusk-15958.herokuapp.com/',
-        //         repo: 'https://github.com/KrisSmith7/media-gems',
-        //         image: '../assets/images/media-gems-screenshot.png'
-
-        //     },
-        //     {
-        //         name: 'Weather Dashboard',
-        //         site: 'https://ekball.github.io/C6-Weather-Dashboard/',
-        //         repo: 'https://github.com/ekball/C6-Weather-Dashboard',
-        //         image: '../assets/images/weather-dashboard-screenshot.png'
-
-        //     },
-        //     {
-        //         name: 'README Generator',
-        //         site: 'https://watch.screencastify.com/v/9nnkvfNLQ3FvrwhAjYeZ',
-        //         repo: 'https://github.com/ekball/C9-README-Generator',
-        //         image: '../assets/images/README-generator-screenshot.png'
-
-        //     },
-        //     {
-        //         name: 'Note Taker',
-        //         site: 'https://whispering-springs-16433.herokuapp.com/',
-        //         repo: 'https://github.com/ekball/C11-Note-Taker',
-        //         image: '../assets/images/notetaker-screenshot.png'
-
-        //     },
-        //     {
-        //         name: 'Password Generator',
-        //         site: 'https://ekball.github.io/C3-Password-Generator/',
-        //         repo: 'https://github.com/ekball/C3-Password-Generator',
-        //         image: '../assets/images/password-generator-screnshot.png'
-
-        //     }
-        // ]
-
-        
-
+function Projects () {
 
         return (
         
@@ -115,18 +19,23 @@ function Projects (props) {
 
             <div>
 
+                <div className='projects-titles-top'>
+                    <h2>Movie Match</h2>
+                    <h2>Media Gems</h2>
+                </div>
+
                 <div className='projects-top-row'>
 
                     <div className='projects-one'>
-                        
+
                         {/* buttons to project 1 (deployed site + github) */}
                         <a href='https://gabrielandrews.github.io/Group-project-movie-/'>
                             <button 
                                 className='projects-button-one-site'
                                 style={{ 
                                     backgroundImage: `url("${MovieMatchPhoto}")`,
-                                    backgroundPosition: "left 36% center",
-                                    backgroundSize: "",
+                                    backgroundPosition: "left 26.5% center",
+                                    backgroundSize: "65vw",
                                     width: "20vw",
                                     height: "33vw",
                                     borderRight: "none"
@@ -135,15 +44,15 @@ function Projects (props) {
                                 Deployed Site
                             </button>
 
-                        </a>
+                        </a> 
 
                         <a  href='https://github.com/gabrielandrews/Group-project-movie-'>
                             <button 
                                 className='projects-button-one-repo'
                                 style={{ 
                                     backgroundImage: `url("${MovieMatchPhoto}")`,
-                                    backgroundPosition: "right 37.25% center",
-                                    backgroundSize: "",
+                                    backgroundPosition: "right 30% center",
+                                    backgroundSize: "65vw",
                                     width: "20vw",
                                     height: "33vw",
                                     borderLeft: "none"
@@ -156,7 +65,7 @@ function Projects (props) {
                     </div>
 
                     <div className='projects-two'>
-                       
+
                         {/* buttons to project 2 (deployed site + github) */}
                         <a  href='https://gentle-dusk-15958.herokuapp.com/'>
                             <button 
@@ -194,10 +103,15 @@ function Projects (props) {
 
                 </div>
 
+                <div className='projects-titles-middle'>
+                    <h2>Weather Dashboard</h2>
+                    <h2>README Generator</h2>
+                </div>
+
                 <div className='projects-middle-row'>
 
                     <div className='projects-three'>
-
+                        
                         {/* buttons to project 3 (deployed site + github) */}
                         <a href='https://ekball.github.io/C6-Weather-Dashboard/'>
                             <button 
@@ -266,6 +180,11 @@ function Projects (props) {
                         </a>
                     </div>
 
+                </div>
+
+                <div className='projects-titles-bottom'>
+                    <h2>Note Taker</h2>
+                    <h2>Password Generator</h2>
                 </div>
 
                 <div className='projects-bottom-row'>

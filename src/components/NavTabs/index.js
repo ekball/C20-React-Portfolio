@@ -1,65 +1,3 @@
-// import React from 'react';
-
-// function Nav(props) {
-
-//     const {
-//         currentPage,
-//         setCurrentPage,
-//     } = props;
-
-//   return (
-//     <nav>
-       
-//         <ul className="flex-row">
-
-//             {/* navigation to the about page */}
-//             <li className='page-anchors'>
-
-//                 {currentPage === "about" ? }
-
-//                 <Button 
-//                     id="about"
-
-
-//                 >
-//                 About Me
-//                 </Button>
-
-//             </li>
-
-//             <li className='page-anchors'>
-
-//                 <Button href="#projects">
-//                 Projects
-//                 </Button>
-
-//             </li>
-
-//             <li className='page-anchors'>
-
-//                 <Button href="#resume">
-//                 Resume
-//                 </Button>
-
-//             </li>
-
-//             <li className='page-anchors'>
-
-//                 <Button href="#contact">
-//                 Contact
-//                 </Button>
-
-//             </li>
-
-//         </ul>
-
-//     </nav>
-//   );
-// }
-
-// export default Nav;
-
-
 import React from 'react';
 
 function NavTabs({ currentPage, handlePageChange }) {
@@ -67,8 +5,12 @@ function NavTabs({ currentPage, handlePageChange }) {
 
     <ul className="nav nav-tabs">
 
+      <li className='name'>
+        <h2>Erick Kyles Ball</h2>
+      </li>
+
       {/*  navigation tab to the about section */}
-      <li className="nav-item">
+      <li >
         <a
           href="#about"
           onClick={() => handlePageChange('About')}
@@ -81,7 +23,7 @@ function NavTabs({ currentPage, handlePageChange }) {
       </li>
 
       {/*  navigation tab to the projects section */}
-      <li className="nav-item">
+      <li >
         <a
           href="#projects"
           onClick={() => handlePageChange('Projects')}
@@ -94,7 +36,7 @@ function NavTabs({ currentPage, handlePageChange }) {
       </li>
 
       {/*  navigation tab to the resume section */}
-      <li className="nav-item">
+      <li >
         <a
           href="#resume"
           onClick={() => handlePageChange('Resume')}
@@ -107,7 +49,7 @@ function NavTabs({ currentPage, handlePageChange }) {
       </li>
 
       {/*  navigation tab to the contact section */}
-      <li className="nav-item">
+      <li >
         <a
           href="#contact"
           // when the contact button is clicked, re-render the page with the info from the contact component
