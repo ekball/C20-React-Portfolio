@@ -12,7 +12,7 @@
 
     The repository link: https://github.com/ekball/C20-React-Portfolio
 
-    The deployed site: 
+    The deployed site: http://ekball.github.io/C20-React-Portfolio
 
 ## Demo React Portfolio
 
