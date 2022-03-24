@@ -5,7 +5,7 @@ import WeatherDashboardPhoto from "../../assets/images/weather-dashboard-screens
 import READMEGeneratorPhoto from "../../assets/images/README-generator-screenshot.png";
 import NotetakerPhoto from "../../assets/images/notetaker-screenshot.png";
 import PasswordGeneratorPhoto from "../../assets/images/password-generator-screenshot.png";
-
+import PokeBuffPhoto from "../../assets/images/pokebuff-screenshot.png";
 
 
 
@@ -192,11 +192,11 @@ function Projects () {
                     <div className='projects-five'>
 
                         {/* buttons to project 5 (deployed site + github) */}
-                        <a href='https://whispering-springs-16433.herokuapp.com/'>
+                        <a href='https://fierce-mesa-57913.herokuapp.com/'>
                             <button 
                                 className='projects-button-five-site'
                                 style={{ 
-                                    backgroundImage: `url("${NotetakerPhoto}")`,
+                                    backgroundImage: `url("${PokeBuffPhoto}")`,
                                     backgroundPosition: "left 18% top",
                                     backgroundSize: "67vw",
                                     width: "20vw",
@@ -208,11 +208,11 @@ function Projects () {
                             </button>                       
                         </a>
                         
-                        <a href='https://github.com/ekball/C11-Note-Taker'>
+                        <a href='https://github.com/ekball/poke-buff'>
                             <button 
                                 className='projects-button-five-repo'
                                 style={{ 
-                                    backgroundImage: `url("${NotetakerPhoto}")`,
+                                    backgroundImage: `url("${PokeBuffPhoto}")`,
                                     backgroundPosition: "right 40% top",
                                     backgroundSize: "67vw",
                                     width: "20vw",

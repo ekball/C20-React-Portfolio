@@ -5,8 +5,8 @@ function NavTabs({ currentPage, handlePageChange }) {
 
     <ul className="nav nav-tabs">
 
-      <li className='name'>
-        <h2>Erick Kyles Ball</h2>
+      <li>
+        <h2 className='name'>Erick Kyles Ball</h2>
       </li>
 
       {/*  navigation tab to the about section */}
