@@ -6,7 +6,7 @@ function Resume() {
         <div className="resume-section">
             <h1 className="resume-title">Resume</h1>
 
-            <a href='../assets/docs/resume.pdf' download className="resume-link">Click here to download a copy of my resume</a>
+            <a href={require(`../../assets/docs/resume.pdf`)} target="_blank" className="resume-link">Click here to download a copy of my resume</a>
         </div>
     );
 }
