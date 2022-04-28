@@ -13,29 +13,20 @@ function Projects () {
 
         return (
         
-        <section className='projects-section'>
+        <section className='projects-section bg-cyan-600'>
             
-            <h1 className='projects-title'>Projects</h1>
+            <h1 className='projects-title flex justify-center text-xl p-5'>Projects</h1>
 
-            <div>
+            <div className='flex flex-wrap justify-evenly p-5'>
 
-                <div className='projects-titles-top'>
-                    <div>
-                    <h2>Movie Match</h2>
-                    <p>MOVIE MATCH DESCRIPTION</p>
+                    <div className='projects-one p-5 flex-column flex-wrap w-1/2 '>
 
-                    </div>
-                    
-                    <div>
-                    <h2>Media Gems</h2>
-                    <p>MEDIA GEMS DESCRIPTION</p>
-                    </div>
-
-                </div>
-
-                <div className='projects-top-row'>
-
-                    <div className='projects-one'>
+                        <h2 className='flex flex-wrap justify-center text-lg underline decoration-wavy decoration-1 underline-offset-2 mb-2'>Movie Match</h2>
+                        <p className='flex flex-wrap justify-center mb-2'>
+                            A game utilizing APIs that tests the user's knowledge of random movies. 
+                            It tallies the user's score and saves the results with initials within local storage. 
+                            Users can replay an unlimited number of times.
+                        </p>
 
                         {/* buttons to project 1 (deployed site + github) */}
                         <a href='https://gabrielandrews.github.io/Group-project-movie-/'>
@@ -43,7 +34,7 @@ function Projects () {
                                 className='projects-button-one-site'
                                 style={{ 
                                     backgroundImage: `url("${MovieMatchPhoto}")`,
-                                    backgroundPosition: "left 26.5% center",
+                                    backgroundPosition: "left 25.7% center",
                                     backgroundSize: "65vw",
                                     width: "20vw",
                                     height: "33vw",
@@ -73,7 +64,16 @@ function Projects () {
 
                     </div>
 
-                    <div className='projects-two'>
+                    <div className='projects-two p-5 flex-column flex-wrap w-1/2'>
+
+                        <div className=''>
+                            <h2 className='flex flex-wrap justify-center text-lg underline decoration-wavy decoration-1 underline-offset-2 mb-2'>Media Gems</h2>
+                            <p className='flex flex-wrap justify-center mb-2'>An application that provides the user with a place to look up reviews to shows
+                                on popular streaming services posted by other users. Users can also save and 
+                                edit reviews when logged in.
+                            </p>
+                        </div>
+
 
                         {/* buttons to project 2 (deployed site + github) */}
                         <a  href='https://gentle-dusk-15958.herokuapp.com/'>
@@ -81,7 +81,7 @@ function Projects () {
                                 className='projects-button-two-site'
                                 style={{ 
                                     backgroundImage: `url("${MediaGemsPhoto}")`,
-                                    backgroundPosition: "left center",
+                                    backgroundPosition: "left 0% center",
                                     backgroundSize: "40vw",
                                     width: "20vw",
                                     height: "33vw",
@@ -97,7 +97,7 @@ function Projects () {
                                 className='projects-button-two-repo'
                                 style={{ 
                                     backgroundImage: `url("${MediaGemsPhoto}")`,
-                                    backgroundPosition: "right 3% center",
+                                    backgroundPosition: "right 0% center",
                                     backgroundSize: "40vw",
                                     width: "20vw",
                                     height: "33vw",
@@ -109,24 +109,19 @@ function Projects () {
                         </a>
 
                     </div>
+            </div>
 
-                </div>
+            <div className='flex flex-wrap justify-evenly p-5'>
 
-                <div className='projects-titles-middle'>
-                    <div>
-                    <h2>Weather Dashboard</h2>
-                    <p>WEATHER DASHBOARD DESCRIPTION</p>
-                    </div>
+                    <div className='projects-three p-5 flex-column flex-wrap w-1/2'>
 
-                    <div>
-                    <h2>README Generator</h2>
-                    <p>README GENERATOR DESCRIPTION</p>
-                    </div>
-                </div>
-
-                <div className='projects-middle-row'>
-
-                    <div className='projects-three'>
+                        <div className='flex-column flex-wrap justify-center'>
+                            <h2 className='flex flex-wrap justify-center text-lg underline decoration-wavy decoration-1 underline-offset-2 mb-2'>Weather Dashboard</h2>
+                            <p className='flex flex-wrap justify-center mb-2'>An application that allows the user to type in a desired location in the search bar
+                                and see current detailed weather information on the location. When users search for a location, 
+                                a history log of past searces is automatically created to quickly find the weather data again.
+                            </p>
+                        </div>
                         
                         {/* buttons to project 3 (deployed site + github) */}
                         <a href='https://ekball.github.io/C6-Weather-Dashboard/'>
@@ -162,7 +157,14 @@ function Projects () {
                         </a>
                     </div>
 
-                    <div className='projects-four'>
+                    <div className='projects-four p-5 flex-column flex-wrap w-1/2'>
+
+                    <div className='flex-column flex-wrap justify-center'>
+                        <h2 className='flex flex-wrap justify-center text-lg underline decoration-wavy decoration-1 underline-offset-2 mb-2'>README Generator</h2>
+                        <p className='flex flex-wrap justify-center mb-2'>
+                            README GENERATOR DESCRIPTION
+                        </p>
+                    </div>
 
                         {/* buttons to project 4 (deployed site + github) */}
                         <a href='https://watch.screencastify.com/v/9nnkvfNLQ3FvrwhAjYeZ'>
@@ -195,25 +197,18 @@ function Projects () {
                             </button>                        
                         </a>
                     </div>
-
                 </div>
 
-                <div className='projects-titles-bottom'>
-                    <div>
-                        <h2>PokeBuff</h2>
-                        <p>POKEBUFF DESCRIPTION</p>
-                    </div>
-                    
-                    <div>
-                    <h2>Password Generator</h2>
-                    <p>PASSWORD GENERATOR DESCRIPTION</p>
-                    </div>
-                    
-                </div>
+                <div className='flex flex-wrap justify-evenly p-5'>
 
-                <div className='projects-bottom-row'>
+                    <div className='projects-five p-5 flex-column flex-wrap w-1/2'>
 
-                    <div className='projects-five'>
+                        <div className='flex-column flex-wrap justify-center'>
+                            <h2 className='flex flex-wrap justify-center text-lg underline decoration-wavy decoration-1 underline-offset-2 mb-2'>PokeBuff</h2>
+                            <p className='flex flex-wrap justify-center mb-2'>
+                                POKEBUFF DESCRIPTION
+                            </p>
+                        </div>
 
                         {/* buttons to project 5 (deployed site + github) */}
                         <a href='https://fierce-mesa-57913.herokuapp.com/'>
@@ -249,7 +244,14 @@ function Projects () {
                         </a>
                     </div>
 
-                    <div className='projects-six'>
+                    <div className='projects-six p-5 flex-column flex-wrap w-1/2'>
+
+                        <div className='flex-column flex-wrap justify-center'>
+                            <h2 className='flex flex-wrap justify-center text-lg underline decoration-wavy decoration-1 underline-offset-2 mb-2'>Password Generator</h2>
+                            <p className='flex flex-wrap justify-center mb-2'>
+                                PASSWORD GENERATOR DESCRIPTION
+                            </p>
+                        </div>
 
                         {/* buttons to project 6 (deployed site + github) */}
                         <a  href='https://ekball.github.io/C3-Password-Generator/'>
@@ -288,7 +290,11 @@ function Projects () {
 
                 </div>
 
-            </div>
+                {/* Finish writing descriptions
+                    fix the margins to the paragraphs
+                    underline name in nav tabs
+                    change background button colors on hover on projects page
+                    change button text color on hover for all buttons on projects page */}
             
         </section>
 

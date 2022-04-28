@@ -181,6 +181,9 @@ a:hover {
   flex-wrap: wrap;
 }
 
+*/
+
+/* 
 .projects-title {
   display: flex;
   font-size: calc(15px + 3vmin);
@@ -189,17 +192,12 @@ a:hover {
 }
 
 .projects-section {
-  background-color:rgb(129, 164, 205);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   color: #054A91;
   flex-wrap: wrap;
-}
-
-.projects-section div {
-  background-color:rgb(129, 164, 205);  
 }
 
 .projects-top-row, .projects-middle-row, .projects-bottom-row {
@@ -283,7 +281,9 @@ button:hover {
   text-decoration: underline;
   font-size: calc(10px + 2vmin);
   flex-wrap: wrap;
-}
+} */
+
+/*
 
 @media screen and (max-width: 980px) {
 
