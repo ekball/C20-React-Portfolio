@@ -20,8 +20,17 @@ function Projects () {
             <div>
 
                 <div className='projects-titles-top'>
+                    <div>
                     <h2>Movie Match</h2>
+                    <p>MOVIE MATCH DESCRIPTION</p>
+
+                    </div>
+                    
+                    <div>
                     <h2>Media Gems</h2>
+                    <p>MEDIA GEMS DESCRIPTION</p>
+                    </div>
+
                 </div>
 
                 <div className='projects-top-row'>
@@ -104,8 +113,15 @@ function Projects () {
                 </div>
 
                 <div className='projects-titles-middle'>
+                    <div>
                     <h2>Weather Dashboard</h2>
+                    <p>WEATHER DASHBOARD DESCRIPTION</p>
+                    </div>
+
+                    <div>
                     <h2>README Generator</h2>
+                    <p>README GENERATOR DESCRIPTION</p>
+                    </div>
                 </div>
 
                 <div className='projects-middle-row'>
@@ -183,8 +199,16 @@ function Projects () {
                 </div>
 
                 <div className='projects-titles-bottom'>
-                    <h2>Note Taker</h2>
+                    <div>
+                        <h2>PokeBuff</h2>
+                        <p>POKEBUFF DESCRIPTION</p>
+                    </div>
+                    
+                    <div>
                     <h2>Password Generator</h2>
+                    <p>PASSWORD GENERATOR DESCRIPTION</p>
+                    </div>
+                    
                 </div>
 
                 <div className='projects-bottom-row'>
