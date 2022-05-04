@@ -49,36 +49,38 @@ function Contact() {
     };
 
     return (
-        <section className='contact-section'>
+        <section className='contact-section bg-cyan-600'>
 
-            <h1 className='contact-title'>Contact</h1>
+            <h1 className='contact-title flex justify-center text-xl p-5'>Contact</h1>
 
             <form onSubmit={handleSubmit}>
                 {/* subsection for name input */}
-                <div className='contact-section'>
+                <div className='contact-section flex justify-center text-xl p-5'>
                     <label htmlFor="name" >Name: </label>
                     <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
                 </div>
 
                 {/* subsection for email input */}
-                <div className='contact-section'>
+                <div className='contact-section flex justify-center text-lg p-5'>
                     <label htmlFor="email" >Email: </label>
                     <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
                 </div>
 
                 {/* subsection to for message input */}
-                <div className='contact-section message-box-title'>
+                <div className='contact-section message-box-title flex justify-center text-lg p-5'>
                     <label htmlFor="message" >Message: </label>
                     <textarea name="message" rows="3" defaultValue={message} onBlur={handleChange} />
                 </div>
 
                 {/* subsection to print error message */}
                 {errorMessage && (
-                <div className='contact-errors'>
+                <div className='contact-errors flex justify-center text-lg p-5'>
                     <p className="error-text">{errorMessage}</p>
                 </div>
                 )}
-                <button className='contact-button' type="submit">Send</button>
+
+                <button className='contact-button text-lg p-5 hover:text-orange-500 font-bold flex justify-center m-auto' type="submit">Send</button>
+                
             </form>
 
         </section>

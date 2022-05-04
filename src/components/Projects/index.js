@@ -295,11 +295,6 @@ function Projects () {
                     </div>
 
                 </div>
-
-                {/* 
-                    underline name in nav tabs
-                    change background button colors on hover on projects page
-                    change button text color on hover for all buttons on projects page */}
             
         </section>
 

@@ -7,7 +7,7 @@ function NavTabs({ currentPage, handlePageChange }) {
 
     <ul className="nav nav-tabs flex justify-evenly">
 
-      <li className='name text-orange-400 flex text-2xl'>
+      <li className='name text-orange-400 flex text-2xl underline decoration-double decoration-1 underline-offset-2'>
         <h2>Erick Kyles Ball</h2>
       </li>
 

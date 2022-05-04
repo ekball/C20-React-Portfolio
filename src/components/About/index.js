@@ -4,7 +4,7 @@ import Avatar from '../../assets/images/avatar.jpeg';
 function About() {
   return (
 
-    <section className='about-section flex-wrap flex justify-center align-center bg-cyan-600'>
+    <section className='about-section flex-wrap flex justify-center align-center bg-cyan-600 h-full'>
 
       <h1 id="about" className="about-title text-lg p-5">About Me</h1>
 
