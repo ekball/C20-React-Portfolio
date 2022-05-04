@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: fantasy, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,8 +9,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
 }
 
+/*
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -34,7 +40,6 @@ body{
   align-items: center;
   justify-content: left;
   flex-wrap: wrap;
-  /* text-decoration: underline; */
   font-size: calc(10px + 2vmin);
 }
 
@@ -69,8 +74,7 @@ body{
 img {
   display: flex;
   flex-wrap: wrap;
-  /* height: calc(20px + 35vmin);
-  width:  calc(5px + 35vmin); */
+ 
   height: 200px;
   width: 100px;
 }
@@ -177,6 +181,9 @@ a:hover {
   flex-wrap: wrap;
 }
 
+*/
+
+/* 
 .projects-title {
   display: flex;
   font-size: calc(15px + 3vmin);
@@ -185,17 +192,12 @@ a:hover {
 }
 
 .projects-section {
-  background-color:rgb(129, 164, 205);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   color: #054A91;
   flex-wrap: wrap;
-}
-
-.projects-section div {
-  background-color:rgb(129, 164, 205);  
 }
 
 .projects-top-row, .projects-middle-row, .projects-bottom-row {
@@ -261,6 +263,15 @@ button:hover {
   text-decoration: underline;
   cursor: pointer;
 }
+.projects-titles-top p, .projects-titles-middle p, .projects-titles-bottom p{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 5px;
+  text-decoration: none;
+  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+}
 
 .projects-titles-top, .projects-titles-middle, .projects-titles-bottom {
   display: flex;
@@ -270,7 +281,9 @@ button:hover {
   text-decoration: underline;
   font-size: calc(10px + 2vmin);
   flex-wrap: wrap;
-}
+} */
+
+/*
 
 @media screen and (max-width: 980px) {
 
@@ -328,8 +341,7 @@ button:hover {
   img {
     display: flex;
     flex-wrap: wrap;
-    /* height: calc(20px + 35vmin);
-    width:  calc(5px + 35vmin); */
+   
     height: 200px;
     width: 100px;
   }
@@ -564,7 +576,6 @@ button:hover {
   align-items: center;
   justify-content: left;
   flex-wrap: wrap;
-  /* text-decoration: underline; */
   font-size: calc(10px + 2vmin);
 }
 
@@ -598,8 +609,7 @@ button:hover {
 img {
   display: flex;
   flex-wrap: wrap;
-  /* height: calc(20px + 35vmin);
-  width:  calc(5px + 35vmin); */
+ 
   height: 200px;
   width: 100px;
 }
@@ -801,4 +811,14 @@ button:hover {
   flex-wrap: wrap;
 }
 
+.projects-titles-top p, .projects-titles-middle p, .projects-titles-bottom p{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 5px;
+  text-decoration: underline;
+  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
 }
+
+} */

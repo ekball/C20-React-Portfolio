@@ -3,14 +3,16 @@ import React from 'react';
 function NavTabs({ currentPage, handlePageChange }) {
   return (
 
-    <ul className="nav nav-tabs">
+    <div className='bg-sky-700 p-5'>
 
-      <li>
-        <h2 className='name'>Erick Kyles Ball</h2>
+    <ul className="nav nav-tabs flex justify-evenly">
+
+      <li className='name text-orange-400 flex text-2xl underline decoration-double decoration-1 underline-offset-2'>
+        <h2>Erick Kyles Ball</h2>
       </li>
 
       {/*  navigation tab to the about section */}
-      <li >
+      <li className='hover:text-orange-400 text-xl'>
         <a
           href="#about"
           onClick={() => handlePageChange('About')}
@@ -23,7 +25,7 @@ function NavTabs({ currentPage, handlePageChange }) {
       </li>
 
       {/*  navigation tab to the projects section */}
-      <li >
+      <li className='hover:text-orange-400 text-xl'>
         <a
           href="#projects"
           onClick={() => handlePageChange('Projects')}
@@ -36,7 +38,7 @@ function NavTabs({ currentPage, handlePageChange }) {
       </li>
 
       {/*  navigation tab to the resume section */}
-      <li >
+      <li className='hover:text-orange-400 text-xl'>
         <a
           href="#resume"
           onClick={() => handlePageChange('Resume')}
@@ -49,7 +51,7 @@ function NavTabs({ currentPage, handlePageChange }) {
       </li>
 
       {/*  navigation tab to the contact section */}
-      <li >
+      <li className='hover:text-orange-400 text-xl'>
         <a
           href="#contact"
           // when the contact button is clicked, re-render the page with the info from the contact component
@@ -62,6 +64,8 @@ function NavTabs({ currentPage, handlePageChange }) {
 
       </li>
     </ul>
+
+    </div>
   );
 }
 
