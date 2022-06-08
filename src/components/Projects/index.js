@@ -13,7 +13,7 @@ function Projects () {
 
         return (
         
-        <section className='projects-section bg-cyan-600'>
+        <section className='projects-section '>
             
             <h1 className='projects-title flex justify-center text-xl p-5'>Projects</h1>
 

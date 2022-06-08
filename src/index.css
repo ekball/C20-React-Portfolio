@@ -15,6 +15,139 @@ body {
   font-weight: 700;
 }
 
+header {
+  background-image: url(../src/assets/images/body-background.jpeg);
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 0; 
+  margin: 0;
+  text-align: center;
+}
+
+header div {
+  display: flex;
+}
+
+header div h1{
+  justify-content: center;
+  font-size: 50px;
+}
+
+header div button {
+  justify-content: center;
+  margin: 2px; 
+  padding: 3px;  
+  background-color: opaque;
+  border: solid;
+}
+
+header .nav-tabs {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
