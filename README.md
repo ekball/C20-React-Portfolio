@@ -20,3 +20,5 @@ Present information about myself using React for future employers
 GitHub Link: **[ekball](https://github.com/ekball/)**   
 Email Address: <ekylesball@gmail.com>
 
+## Demo React Portfolio
+![demo-react-portfolio](./src/assets/images/screenshot.png)
