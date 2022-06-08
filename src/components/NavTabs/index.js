@@ -3,7 +3,7 @@ import React from 'react';
 function NavTabs({ currentPage, handlePageChange }) {
   return (
 
-    <div className='bg-sky-700 p-5'>
+    <div className=' p-5'>
 
     <ul className="nav nav-tabs flex justify-evenly">
 

@@ -5,7 +5,7 @@ import ProfilePicture from '../../assets/images/profile-picture.jpeg';
 function About() {
   return (
 
-    <section className='about-section flex-wrap flex justify-center align-center bg-cyan-600 h-full'>
+    <section className='about-section flex-wrap flex justify-center align-center'>
 
       <h1 id="about" className="about-title text-lg p-5">About Me</h1>
 

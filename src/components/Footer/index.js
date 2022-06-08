@@ -4,7 +4,7 @@ function Footer() {
 
     return(
 
-        <div className="footer-section flex justify-evenly content-center bg-sky-700 p-2">
+        <div className="footer-section flex justify-evenly content-center p-2">
 
             <a href="mailto:ekylesball@gmail.com">ekylesball@gmail.com</a>
 

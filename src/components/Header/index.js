@@ -12,7 +12,7 @@ function Header(props) {
 
     return(
 
-        <header className="header-section">
+        <Headroom className="header-section">
 
             <Nav
                 nav={nav}
@@ -23,7 +23,7 @@ function Header(props) {
                 
             </Nav>
             
-        </header>
+        </Headroom>
 
     );
 }
