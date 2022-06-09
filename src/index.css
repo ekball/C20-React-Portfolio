@@ -41,7 +41,15 @@ header div button {
   border: solid;
 }
 
-
+.footer-section {
+  background-image: url(../src/assets/images/body-background.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 0; 
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
 
 
 

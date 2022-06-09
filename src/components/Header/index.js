@@ -22,7 +22,7 @@ function Header(props) {
 
                     <button className="hover:text-orange-400 border-none">
                         <a className="header-icons" href="https://github.com/ekball" target="_blank" rel="noreferrer">
-                            <div className='grow hover-color'>
+                            <div className=''>
                                 <GitHubIcon sx={{ fontSize: 50 }} />
                             </div>
                         </a>
