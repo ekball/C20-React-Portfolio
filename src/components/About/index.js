@@ -4,17 +4,14 @@ import EmberSnow from '../../assets/images/ember1.jpeg';
 import EmberGaze from '../../assets/images/ember2.jpeg';
 import EmberBed from '../../assets/images/ember3.jpeg';
 import EmberSleep from '../../assets/images/ember4.jpeg';
+import EmberProfile from '../../assets/images/ember-profile.jpeg';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
 import List from '@mui/material/List';
 import PetsIcon from '@mui/icons-material/Pets';
 import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
+
 
 function About() {
 
@@ -62,13 +59,14 @@ function About() {
 
     <section className='about-section flex-wrap flex justify-evenly align-center content-around m-12'>
 
-      <h1 id="about" className="about-title text-lg">About Me</h1>
-
-      <div className='flex justify-evenly align-center pt-5'>
+      <div className='flex justify-evenly align-center'>
 
         <div className='flex-column'>
 
-          <img src={ProfilePicture} className='h-48 m-5'/>
+          <div className='inline-flex justify-center pl-5'>
+            <img src={ProfilePicture} className='h-48 mr-2'/>
+            <img src={EmberProfile} className='h-48 ml-2'/>
+          </div>
 
           <div className='p-5'>
             {['Click here to learn about Ember'].map((anchor) => (

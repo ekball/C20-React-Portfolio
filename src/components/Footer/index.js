@@ -5,7 +5,8 @@ import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import LinkedInIcon from '@mui/icons-material/LinkedIn'; 
 import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import LooksIcon from '@mui/icons-material/Looks';
+import Divider from '@mui/material/Divider';
+
 // function Footer() {
 
 //     return(

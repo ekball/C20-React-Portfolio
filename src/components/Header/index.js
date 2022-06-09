@@ -3,6 +3,8 @@ import Nav from "../NavTabs"
 import Headroom from 'react-headroom';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn'; 
+import Divider from '@mui/material/Divider';
+
 
 function Header(props) {
 
@@ -28,7 +30,7 @@ function Header(props) {
                         </a>
                     </button>
 
-                    <h1 className="title-name text-3xl mr-10 ml-10 mt-5 mb-5 text-orange-300">
+                    <h1 className="title-name text-5xl mr-10 ml-10 mt-5 mb-5 text-orange-300">
                         Erick Kyles Ball
                     </h1> 
 
@@ -49,6 +51,8 @@ function Header(props) {
                     className=''
                 >  
                 </Nav>
+
+                <Divider sx={{ borderBottomWidth: 5 }}/>
 
             </header>
             
