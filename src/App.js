@@ -21,14 +21,16 @@ function App() {
         page={page}
         currentPage={currentPage}
         setCurrentPage={setCurrentPage}
-        ></Header>
+      />
 
-        <About></About>
-        <Projects></Projects>
-        <Resume></Resume>
-        <Contact></Contact>
+      <div className='flex-column justify-evenly content-evenly'>
+        <About/>
+        <Projects/>
+        <Resume/>
+        <Contact/>
+      </div>
 
-      <Footer></Footer>
+      <Footer/>
 
     </>
   );
