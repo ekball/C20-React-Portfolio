@@ -3,7 +3,7 @@ import React from 'react';
 function NavTabs({ currentPage, handlePageChange }) {
   return (
 
-      <ul className="inline-flex pb-5">
+      <ul className="flex justify-evenly pb-5">
 
         {/*  navigation tab to the about section */}
         <li className='hover:text-orange-400 text-xl'>
