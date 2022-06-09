@@ -49,7 +49,7 @@ function Contact() {
     };
 
     return (
-        <section className='contact-section '>
+        <section className='contact-section content-around'>
 
             <h1 className='contact-title flex justify-center text-xl p-5'>Contact</h1>
 

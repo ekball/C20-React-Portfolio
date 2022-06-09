@@ -21,7 +21,7 @@ function Resume() {
 
 
     return(
-        <div className="resume-section ">
+        <div className="resume-section content-around">
             <div>
                 <h1 className="resume-title flex justify-center text-xl p-5">Resume</h1>
 

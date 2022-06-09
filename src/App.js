@@ -22,10 +22,12 @@ function App() {
         currentPage={currentPage}
         setCurrentPage={setCurrentPage}
         ></Header>
-      <About></About>
-      <Projects></Projects>
-      <Resume></Resume>
-      <Contact></Contact>
+
+        <About></About>
+        <Projects></Projects>
+        <Resume></Resume>
+        <Contact></Contact>
+
       <Footer></Footer>
 
     </>
