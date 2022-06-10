@@ -29,16 +29,16 @@ function App() {
       
       <div className='flex-column justify-evenly content-evenly'>
 
-        <Divider className='pt-20 text-xl' sx={{ borderBottomWidth: 5 }} style={{ borderBottomColor:'black' }}>About Me</Divider>
+        <Divider className='pt-20 text-xl' >About Me</Divider>
         <About/>
 
-        <Divider className='pt-20 text-xl' sx={{ borderBottomWidth: 5 }}>Projects</Divider>
+        <Divider className='pt-20 text-xl' >Projects</Divider>
         <Projects/>
 
-        <Divider className='pt-20 text-xl' sx={{ borderBottomWidth: 5 }}>Resume and Skills</Divider>
+        <Divider className='pt-20 text-xl' >Resume and Skills</Divider>
         <Resume/>
 
-        <Divider className='pt-20 text-xl' sx={{ borderBottomWidth: 5 }}>Contact Me</Divider>
+        <Divider className='pt-20 text-xl' >Contact Me</Divider>
         <Contact/>
 
       </div>
