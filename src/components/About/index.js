@@ -33,21 +33,21 @@ function About() {
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
-      className='sidebar h-full w-72'
+      className='sidebar h-full w-96'
     >
       <List className='flex-column'>
           <ListItem className='justify-center'>
-            <img src={EmberSnow} className='h-48 w-32 mr-1 rounded-lg border-dashed border-2 border-orange-500'/>
-            <img src={EmberGaze} className='h-48 w-32 ml-1 rounded-lg border-dashed border-2 border-orange-500'/>
+            <img src={EmberSnow} className='h-48 w-1/2 mr-1 rounded-lg border-dashed border-2 border-orange-500'/>
+            <img src={EmberGaze} className='h-48 w-1/2 ml-1 rounded-lg border-dashed border-2 border-orange-500'/>
           </ListItem>
-          <ListItem  className='justify-center text-justify text-orange-300'>
+          <ListItem  className='justify-center text-justify'>
             <p>Ember is a 7 year old Siberian Husky with bright red fur. She enjoys her loud squeaky toys, long walks when it isn't hot outside, and she is a glutton for treats.</p>
           </ListItem>
           <ListItem  className='justify-center'>
-            <img src={EmberBed} className='h-48 rounded-lg border-dashed border-2 border-orange-500'/>
+            <img src={EmberBed} className='h-52 w-96 rounded-lg border-dashed border-2 border-orange-500'/>
           </ListItem>
           <ListItem  className='justify-center'>
-            <img src={EmberSleep} className='h-48 rounded-lg border-dashed border-2 border-orange-500'/>
+            <img src={EmberSleep} className='h-52 w-96 rounded-lg border-dashed border-2 border-orange-500'/>
           </ListItem>
           
       </List>
@@ -85,7 +85,7 @@ function About() {
 
         </div>
 
-        <p className='flex flex-wrap w-1/2'>
+        <p className='flex flex-wrap w-1/2 leading-loose'>
         Full stack developer proficient in building websites from a user story, preparing a minimally viable product, and then fine- tuning the small details into an efficiently running complete site. 
         Able to efficiently work in a group as well as independently in order to complete tasks on time. 
         Prior experience gained through working as a Dog Trainer allows the delegation of tasks if necessary, while also multitasking across various duties. 

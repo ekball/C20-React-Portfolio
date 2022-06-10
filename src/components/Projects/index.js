@@ -9,18 +9,9 @@ import PreviewIcon from '@mui/icons-material/Preview';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import { orange } from '@mui/material/colors';
-
-
-
-
-
-
-
+import Divider from '@mui/material/Divider';
 
 function Projects () {
-
-    const primary = orange[500];
 
     const [value, setValue] = React.useState('recents');
 
@@ -34,16 +25,16 @@ function Projects () {
 
             <div className='mt-10'>
 
-                <h2 className='flex justify-center text-lg underline decoration-wavy decoration-1 underline-offset-2 mb-2'>
+                <h2 className='flex justify-center text-xl underline decoration-double decoration-1 underline-offset-2 mb-2'>
                     Movie Match
                 </h2>
 
-                <div className='flex justify-evenly align-center mb-20'>
+                <div className='flex justify-evenly align-center mb-20 pt-5'>
                         
                     <div className='flex-column'>
-                        <img src={MovieMatchPhoto} className='' style={{ height: 320, width: 384}}/>
-                        <div className='inline-flex justify-between'>
-                            <BottomNavigation sx={{ width: 384, bottom: 0, left: 0, right: 0 }} value={value} onChange={handleChange} showLabels>
+                        <img src={MovieMatchPhoto} className='border-solid border-2 border-neutral-800 border-b-none rounded-t-lg' style={{ height: 320, width: 384}}/>
+                        <div className='inline-flex justify-between border-solid border-2 border-neutral-800 rounded-b-sm'>
+                            <BottomNavigation sx={{ width: 380, bottom: 0, left: 0, right: 0 }} value={value} onChange={handleChange} showLabels>
 
                                 <BottomNavigationAction
                                     href="https://ekball.github.io/Movie-Quiz/"
@@ -51,6 +42,7 @@ function Projects () {
                                     value="deployed site"
                                     icon={<PreviewIcon/>}
                                 />
+                                <Divider orientation="vertical" variant="middle" flexItem/>
                                 <BottomNavigationAction
                                     href="https://github.com/ekball/Movie-Quiz"
                                     label="Github"
@@ -62,7 +54,7 @@ function Projects () {
                         </div>                        
                     </div>
     
-                    <p className='flex flex-wrap justify-center mb-2 text-center descriptions' style={{ width: 200}}>
+                    <p className='flex flex-wrap justify-center mb-2 text-center leading-loose' style={{ width: 300}}>
                         A game utilizing APIs that tests the user's knowledge of random movies. 
                         It tallies the user's score and saves the results with initials within local storage. 
                         Users can replay an unlimited number of times.
@@ -74,22 +66,22 @@ function Projects () {
 
             <div className='mt-10'>
 
-                <h2 className='flex justify-center text-lg underline decoration-wavy decoration-1 underline-offset-2 mb-2'>
+                <h2 className='flex justify-center text-xl underline decoration-double decoration-1 underline-offset-2 mb-2'>
                     Media Gems
                 </h2>
 
-                <div className='flex justify-evenly align-center mb-20'>
+                <div className='flex justify-evenly align-center mb-20 pt-5'>
 
-                    <p className='flex flex-wrap justify-center mb-2 text-center ' style={{ width: 200}}>
+                    <p className='flex flex-wrap justify-center mb-2 text-center leading-loose' style={{ width: 300}}>
                         An application that provides the user with a place to look up reviews to shows
                         on popular streaming services posted by other users. Users can also save and 
                         edit reviews when logged in.
                     </p>
                         
                     <div className='flex-column'>
-                        <img src={MediaGemsPhoto} className='' style={{ height: 320, width: 384}}/>
-                        <div className='inline-flex justify-between'>
-                            <BottomNavigation sx={{ width: 384, bottom: 0, left: 0, right: 0 }} value={value} onChange={handleChange} showLabels>
+                        <img src={MediaGemsPhoto} className='border-solid border-2 border-neutral-800 border-b-none rounded-t-lg' style={{ height: 320, width: 384}}/>
+                        <div className='inline-flex justify-between border-solid border-2 border-neutral-800 rounded-b-sm'>
+                            <BottomNavigation sx={{ width: 380, bottom: 0, left: 0, right: 0 }} value={value} onChange={handleChange} showLabels>
 
                                 <BottomNavigationAction
                                     href="https://gentle-dusk-15958.herokuapp.com/"
@@ -97,6 +89,7 @@ function Projects () {
                                     value="deployed site"
                                     icon={<PreviewIcon/>}
                                 />
+                                <Divider orientation="vertical" variant="middle" flexItem/>
                                 <BottomNavigationAction
                                     href="https://github.com/ekball/media-gems"
                                     label="Github"
@@ -114,16 +107,16 @@ function Projects () {
 
             <div className='mt-10'>
 
-                <h2 className='flex justify-center text-lg underline decoration-wavy decoration-1 underline-offset-2 mb-2'>
+                <h2 className='flex justify-center text-xl underline decoration-double decoration-1 underline-offset-2 mb-2'>
                     Weather Dashboard
                 </h2>
 
-                <div className='flex justify-evenly align-center mb-20'>
+                <div className='flex justify-evenly align-center mb-20 pt-5'>
                         
-                    <div className='flex-column'>
-                        <img src={WeatherDashboardPhoto} className='' style={{ height: 320, width: 384}}/>
-                        <div className='inline-flex justify-between bg-orange-300'>
-                            <BottomNavigation sx={{ width: 384, bottom: 0, left: 0, right: 0 }} color='orange[200]' value={value} onChange={handleChange} showLabels>
+                    <div className='flex-column '>
+                        <img src={WeatherDashboardPhoto} className='border-solid border-2 border-neutral-800 border-b-none rounded-t-lg' style={{ height: 320, width: 384}}/>
+                        <div className='inline-flex justify-between border-solid border-2 border-neutral-800 rounded-b-sm'>
+                            <BottomNavigation sx={{ width: 380, bottom: 0, left: 0, right: 0 }} value={value} onChange={handleChange} showLabels>
 
                                 <BottomNavigationAction
                                     href="https://github.com/ekball/C6-Weather-Dashboard"
@@ -131,6 +124,7 @@ function Projects () {
                                     value="deployed site"
                                     icon={<PreviewIcon/>}
                                 />
+                                <Divider orientation="vertical" variant="middle" flexItem/>
                                 <BottomNavigationAction
                                     href="https://github.com/ekball/Movie-Quiz"
                                     label="Github"
@@ -142,7 +136,7 @@ function Projects () {
                         </div>                        
                     </div>
     
-                    <p className='flex flex-wrap justify-center mb-2 text-center descriptions' style={{ width: 200}}>
+                    <p className='flex flex-wrap justify-center mb-2 text-center leading-loose' style={{ width: 300}}>
                         An application that allows the user to type in a desired location in the search bar
                         and see current detailed weather information on the location. When users search for a location, 
                         a history log of past searces is automatically created to quickly find the weather data again.
@@ -154,22 +148,22 @@ function Projects () {
 
             <div className='mt-10'>
 
-                <h2 className='flex justify-center text-lg underline decoration-wavy decoration-1 underline-offset-2 mb-2'>
+                <h2 className='flex justify-center text-xl underline decoration-double decoration-1 underline-offset-2 mb-2'>
                     Media Gems
                 </h2>
 
-                <div className='flex justify-evenly align-center mb-20'>
+                <div className='flex justify-evenly align-center mb-20 pt-5'>
 
-                    <p className='flex flex-wrap justify-center mb-2 text-center descriptions' style={{ width: 200}}>
+                    <p className='flex flex-wrap justify-center mb-2 text-center leading-loose' style={{ width: 300}}>
                         This application will generate an official README document for projects. 
                         It is created as the user provides answers to prompts, which are then formatted into sections
                         with a table of contents. The document is created in a secondary folder within the project.
                     </p>
                         
                     <div className='flex-column'>
-                        <img src={READMEGeneratorPhoto} className='' style={{ height: 320, width: 384}}/>
-                        <div className='inline-flex justify-between'>
-                            <BottomNavigation sx={{ width: 384, bottom: 0, left: 0, right: 0 }} value={value} onChange={handleChange} showLabels>
+                        <img src={READMEGeneratorPhoto} className='border-solid border-2 border-neutral-800 border-b-none rounded-t-lg' style={{ height: 320, width: 384}}/>
+                        <div className='inline-flex justify-between border-solid border-2 border-neutral-800 rounded-b-sm'>
+                            <BottomNavigation sx={{ width: 380, bottom: 0, left: 0, right: 0 }} value={value} onChange={handleChange} showLabels>
 
                                 <BottomNavigationAction
                                      href="https://watch.screencastify.com/v/9nnkvfNLQ3FvrwhAjYeZ"
@@ -177,6 +171,7 @@ function Projects () {
                                      value="demo video"
                                     icon={<PreviewIcon/>}
                                 />
+                                <Divider orientation="vertical" variant="middle" flexItem/>
                                 <BottomNavigationAction
                                     href="https://github.com/ekball/C9-README-Generator"
                                     label="Github"
@@ -194,16 +189,16 @@ function Projects () {
 
             <div className='mt-10'>
 
-                <h2 className='flex justify-center text-lg underline decoration-wavy decoration-1 underline-offset-2 mb-2'>
+                <h2 className='flex justify-center text-xl underline decoration-double decoration-1 underline-offset-2 mb-2'>
                     PokeBuff
                 </h2>
 
-                <div className='flex justify-evenly align-center mb-20'>
+                <div className='flex justify-evenly align-center mb-20 pt-5'>
                         
                     <div className='flex-column'>
-                        <img src={PokeBuffPhoto} className='' style={{ height: 320, width: 384}}/>
-                        <div className='inline-flex justify-between'>
-                            <BottomNavigation sx={{ width: 384, bottom: 0, left: 0, right: 0 }} value={value} onChange={handleChange} showLabels>
+                        <img src={PokeBuffPhoto} className='border-solid border-2 border-neutral-800 border-b-none rounded-t-lg' style={{ height: 320, width: 384}}/>
+                        <div className='inline-flex justify-between border-solid border-2 border-neutral-800 rounded-b-sm'>
+                            <BottomNavigation sx={{ width: 380, bottom: 0, left: 0, right: 0 }} value={value} onChange={handleChange} showLabels>
 
                                 <BottomNavigationAction
                                     href="https://fierce-mesa-57913.herokuapp.com/"
@@ -211,6 +206,7 @@ function Projects () {
                                     value="deployed site"
                                     icon={<PreviewIcon/>}
                                 />
+                                <Divider orientation="vertical" variant="middle" flexItem/>
                                 <BottomNavigationAction
                                     href="https://github.com/ekball/poke-buff"
                                     label="Github"
@@ -222,7 +218,7 @@ function Projects () {
                         </div>                        
                     </div>
     
-                    <p className='flex flex-wrap justify-center mb-2 text-center descriptions' style={{ width: 200}}>
+                    <p className='flex flex-wrap justify-center mb-2 text-center leading-loose' style={{ width: 300}}>
                         An website that allows Pokémon fans to learn more about the franchise.
                         There are 3 main pages currently: a Pokédex page that will link the user to a site with more detailed info,
                         an upcoming releases page that lists future game title release dates, and a chatroom page.
@@ -234,22 +230,22 @@ function Projects () {
 
             <div className='mt-10'>
 
-                <h2 className='flex justify-center text-lg underline decoration-wavy decoration-1 underline-offset-2 mb-2'>
+                <h2 className='flex justify-center text-xl underline decoration-double decoration-1 underline-offset-2 mb-2'>
                     Password Generator
                 </h2>
 
-                <div className='flex justify-evenly align-center mb-20'>
+                <div className='flex justify-evenly align-center mb-20 pt-5'>
 
-                    <p className='flex flex-wrap justify-center mb-2 text-center descriptions' style={{ width: 200}}>
+                    <p className='flex flex-wrap justify-center mb-2 text-center leading-loose' style={{ width: 300}}>
                         This application will create a new, random password. The user will be prompted for desired length of password
                         and which types of characters the user would like to be included in the password. The generated password can then be 
                         copy and pasted.
                     </p>
                         
                     <div className='flex-column'>
-                        <img src={PasswordGeneratorPhoto} className='' style={{ height: 320, width: 384}}/>
-                        <div className='inline-flex justify-between'>
-                            <BottomNavigation sx={{ width: 384, bottom: 0, left: 0, right: 0 }} value={value} onChange={handleChange} showLabels>
+                        <img src={PasswordGeneratorPhoto} className='border-solid border-2 border-neutral-800 border-b-none rounded-t-lg' style={{ height: 320, width: 384}}/>
+                        <div className='inline-flex justify-between border-solid border-2 border-neutral-800 rounded-b-sm'>
+                            <BottomNavigation sx={{ width: 380, bottom: 0, left: 0, right: 0 }} value={value} onChange={handleChange} showLabels>
 
                                 <BottomNavigationAction
                                     href="https://ekball.github.io/C3-Password-Generator/"
@@ -257,6 +253,7 @@ function Projects () {
                                     value="deployed site"
                                     icon={<PreviewIcon/>}
                                 />
+                                <Divider orientation="vertical" variant="middle" flexItem/>
                                 <BottomNavigationAction
                                     href="https://github.com/ekball/C3-Password-Generator"
                                     label="Github"

@@ -30,7 +30,7 @@ function Header(props) {
                         </a>
                     </button>
 
-                    <h1 className="title-name text-5xl mr-10 ml-10 mt-5 mb-5 text-orange-300">
+                    <h1 className="title-name text-6xl mr-10 ml-10 mt-5 mb-5 text-orange-300">
                         Erick Kyles Ball
                     </h1> 
 
