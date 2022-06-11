@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import InfoIcon from '@mui/icons-material/Info';
 import Button from '@mui/material/Button';
-import { orange } from '@mui/material/colors';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 function NavTabs({ currentPage, handlePageChange }) {

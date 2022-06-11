@@ -1,15 +1,21 @@
 import React from 'react';
+
 import MovieMatchPhoto from "../../assets/images/movie-match-screenshot.png";
 import MediaGemsPhoto from "../../assets/images/media-gems-screenshot.png";
 import WeatherDashboardPhoto from "../../assets/images/weather-dashboard-screenshot.png";
 import READMEGeneratorPhoto from "../../assets/images/README-generator-screenshot.png";
 import PasswordGeneratorPhoto from "../../assets/images/password-generator-screenshot.png";
 import PokeBuffPhoto from "../../assets/images/pokebuff-screenshot.png";
+
 import PreviewIcon from '@mui/icons-material/Preview';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Divider from '@mui/material/Divider';
+import Chip from '@mui/material/Chip';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+
+
 
 function Projects () {
 
@@ -18,6 +24,17 @@ function Projects () {
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
+
+    const theme = createTheme({
+        palette: {
+            primary: {
+                main: '#000000',
+            },
+            secondary: {
+                main: '#FED7AA',
+            }
+        }
+    });
 
     return (
         
@@ -54,12 +71,40 @@ function Projects () {
                         </div>                        
                     </div>
     
-                    <p className='flex flex-wrap justify-center mb-2 text-center leading-loose' style={{ width: 300}}>
-                        A game utilizing APIs that tests the user's knowledge of random movies. 
-                        It tallies the user's score and saves the results with initials within local storage. 
-                        Users can replay an unlimited number of times.
-                    </p>
-    
+                    <div className='flex-column flex-wrap justify-center'>
+
+                        <p className='flex flex-wrap justify-center mb-2 text-center leading-loose' style={{ width: 300}}>
+                            A game utilizing APIs that tests the user's knowledge of random movies. 
+                            It tallies the user's score and saves the results with initials within local storage. 
+                            Users can replay an unlimited number of times.
+                        </p>
+
+                        <h5 className='flex flex-wrap justify-center text-center mt-5'>
+                            Technologies used:
+                        </h5>
+
+                        <ThemeProvider theme={theme} className='flex-column flex-wrap justify-center'>
+
+                            <div className='justify-center mt-2'>
+                                <Chip label="HTML" color='secondary'/>
+                                <Chip label="CSS" color='secondary'/>
+                                <Chip label="Tailwind" color='secondary'/>
+                                <Chip label="Javascript" color='secondary'/>
+                            </div>
+                            <div className='justify-center mt-2'>
+                                <Chip label="Third-Party APIs" color='secondary'/>
+                                <Chip label="JQuery" color='secondary'/>
+                                <Chip label="Web APIs" color='secondary'/>
+                            </div>
+                            <div className='justify-center mt-2'>
+                                <Chip label="Server-Side APIs" color='secondary'/>
+                                <Chip label="Agile" color='secondary'/>
+                            </div>
+
+                        </ThemeProvider>
+
+                    </div>
+
                 </div>
 
             </div>
@@ -72,12 +117,45 @@ function Projects () {
 
                 <div className='flex justify-evenly align-center mb-20 pt-5'>
 
-                    <p className='flex flex-wrap justify-center mb-2 text-center leading-loose' style={{ width: 300}}>
-                        An application that provides the user with a place to look up reviews to shows
-                        on popular streaming services posted by other users. Users can also save and 
-                        edit reviews when logged in.
-                    </p>
+                    <div className='flex-column flex-wrap justify-center'>
+
+                        <p className='flex flex-wrap justify-center mb-2 text-center leading-loose' style={{ width: 300}}>
+                            An application that provides the user with a place to look up reviews to shows
+                            on popular streaming services posted by other users. Users can also save and 
+                            edit reviews when logged in.
+                        </p>
                         
+                        <h5 className='flex flex-wrap justify-center text-center mt-5'>
+                            Technologies used:
+                        </h5>
+
+                        <ThemeProvider theme={theme} className='flex-column flex-wrap justify-center'>
+
+                            <div className='justify-center mt-2'>
+                                <Chip label="HTML" color='secondary'/>
+                                <Chip label="CSS" color='secondary'/>
+                                <Chip label="Tailwind" color='secondary'/>
+                                <Chip label="Javascript" color='secondary'/>
+                            </div>
+                            <div className='justify-center mt-2'>
+                                <Chip label="Third-Party APIs" color='secondary'/>
+                                <Chip label="Handlebars.js" color='secondary'/>
+                                <Chip label="MVC" color='secondary'/>
+                            </div>
+                            <div className='justify-center mt-2'>
+                                <Chip label="Express.js" color='secondary'/>
+                                <Chip label="Node.js" color='secondary'/>
+                                <Chip label="SQL" color='secondary'/>
+                                <Chip label="Sequelize" color='secondary'/>
+                            </div>
+                            <div className='justify-center mt-2'>
+                                <Chip label="ORM" color='secondary'/>
+                                <Chip label="Heroku" color='secondary'/>
+                                <Chip label="Agile" color='secondary'/>
+                            </div>
+                        </ThemeProvider>
+                    </div>
+
                     <div className='flex-column'>
                         <img src={MediaGemsPhoto} className='border-solid border-2 border-neutral-800 border-b-none rounded-t-lg' style={{ height: 320, width: 384}}/>
                         <div className='inline-flex justify-between border-solid border-2 border-neutral-800 rounded-b-sm'>
@@ -100,7 +178,7 @@ function Projects () {
 
                         </div>                        
                     </div>
-      
+                
                 </div>
 
             </div>
@@ -136,12 +214,32 @@ function Projects () {
                         </div>                        
                     </div>
     
+                    <div className='flex-column flex-wrap justify-center'>
+
                     <p className='flex flex-wrap justify-center mb-2 text-center leading-loose' style={{ width: 300}}>
                         An application that allows the user to type in a desired location in the search bar
                         and see current detailed weather information on the location. When users search for a location, 
                         a history log of past searces is automatically created to quickly find the weather data again.
                     </p>
     
+                    <h5 className='flex flex-wrap justify-center text-center mt-5'>
+                        Technologies used:
+                    </h5>
+
+                    <ThemeProvider theme={theme} className='flex-column flex-wrap justify-center'>
+
+                        <div className='justify-center mt-2'>
+                            <Chip label="HTML" color='secondary'/>
+                            <Chip label="CSS" color='secondary'/>
+                            <Chip label="Third-Party APIs" color='secondary'/>
+                            <Chip label="Javascript" color='secondary'/>
+                        </div>
+                        <div className='justify-center mt-2'>
+                            <Chip label="Agile" color='secondary'/>
+                        </div>
+                    </ThemeProvider>
+
+                    </div>
                 </div>
 
             </div>
@@ -149,17 +247,33 @@ function Projects () {
             <div className='mt-10'>
 
                 <h2 className='flex justify-center text-xl underline decoration-double decoration-1 underline-offset-2 mb-2'>
-                    Media Gems
+                    README Generator
                 </h2>
 
                 <div className='flex justify-evenly align-center mb-20 pt-5'>
 
-                    <p className='flex flex-wrap justify-center mb-2 text-center leading-loose' style={{ width: 300}}>
-                        This application will generate an official README document for projects. 
-                        It is created as the user provides answers to prompts, which are then formatted into sections
-                        with a table of contents. The document is created in a secondary folder within the project.
-                    </p>
-                        
+                    <div className='flex-column flex-wrap justify-center'>
+
+                        <p className='flex flex-wrap justify-center mb-2 text-center leading-loose' style={{ width: 300}}>
+                            This application will generate an official README document for projects. 
+                            It is created as the user provides answers to prompts, which are then formatted into sections
+                            with a table of contents. The document is created in a secondary folder within the project.
+                        </p>
+
+                        <h5 className='flex flex-wrap justify-center text-center mt-5'>
+                            Technologies used:
+                        </h5>
+
+                        <ThemeProvider theme={theme} className='flex flex-wrap'>
+
+                            <Chip label="HTML" color='secondary'/>
+                            <Chip label="Javascript" color='secondary'/>
+                            <Chip label="Node.js" color='secondary'/>
+                            <Chip label="Agile" color='secondary'/>
+
+                        </ThemeProvider>
+                    </div>
+
                     <div className='flex-column'>
                         <img src={READMEGeneratorPhoto} className='border-solid border-2 border-neutral-800 border-b-none rounded-t-lg' style={{ height: 320, width: 384}}/>
                         <div className='inline-flex justify-between border-solid border-2 border-neutral-800 rounded-b-sm'>
@@ -218,11 +332,49 @@ function Projects () {
                         </div>                        
                     </div>
     
-                    <p className='flex flex-wrap justify-center mb-2 text-center leading-loose' style={{ width: 300}}>
-                        An website that allows Pokémon fans to learn more about the franchise.
-                        There are 3 main pages currently: a Pokédex page that will link the user to a site with more detailed info,
-                        an upcoming releases page that lists future game title release dates, and a chatroom page.
-                    </p>
+                    <div className='flex justify-evenly align-center mb-20 '>
+
+                        <div className='flex-column flex-wrap justify-center'>
+
+                            <p className='flex flex-wrap justify-center mb-2 text-center leading-loose' style={{ width: 400}}>
+                                An website that allows Pokémon fans to learn more about the franchise.
+                                There are 3 main pages currently: a Pokédex page that will link the user to a site with more detailed info,
+                                an upcoming releases page that lists future game title release dates, and a chatroom page.
+                            </p>
+
+                            <h5 className='flex flex-wrap justify-center text-center mt-5'>
+                                Technologies used:
+                            </h5>
+
+                            <ThemeProvider theme={theme} className='flex-column flex-wrap justify-center'>
+
+                                <div className='justify-center mt-2'>
+                                    <Chip label="HTML" color='secondary'/>
+                                    <Chip label="CSS" color='secondary'/>
+                                    <Chip label="Tailwind" color='secondary'/>
+                                    <Chip label="Javascript" color='secondary'/>
+                                    <Chip label="Third-Party APIs" color='secondary'/>
+                                </div>
+                                <div className='justify-center mt-2'>
+                                    <Chip label="MERN" color='secondary'/>
+                                    <Chip label="React.js" color='secondary'/>
+                                    <Chip label="Node.js" color='secondary'/>
+                                    <Chip label="Express.js" color='secondary'/>
+                                    <Chip label="BCrypt" color='secondary'/>
+                                </div>
+                                <div className='justify-center mt-2'>
+                                    <Chip label="MongoDB" color='secondary'/>
+                                    <Chip label="GraphQL" color='secondary'/>
+                                    <Chip label="NoSQL" color='secondary'/>
+                                    <Chip label="Agile" color='secondary'/>
+                                    <Chip label="Heroku" color='secondary'/>
+                                </div>
+                                <div className='justify-center mt-2'>
+                                    <Chip label="JSON Web Tokens" color='secondary'/>
+                                </div>
+                            </ThemeProvider>
+                        </div>
+                    </div>
     
                 </div>
 
@@ -236,11 +388,27 @@ function Projects () {
 
                 <div className='flex justify-evenly align-center mb-20 pt-5'>
 
-                    <p className='flex flex-wrap justify-center mb-2 text-center leading-loose' style={{ width: 300}}>
-                        This application will create a new, random password. The user will be prompted for desired length of password
-                        and which types of characters the user would like to be included in the password. The generated password can then be 
-                        copy and pasted.
-                    </p>
+                    <div className='flex-column flex-wrap justify-center'>
+
+                        <p className='flex flex-wrap justify-center mb-2 text-center leading-loose' style={{ width: 300}}>
+                            This application will create a new, random password. The user will be prompted for desired length of password
+                            and which types of characters the user would like to be included in the password. The generated password can then be 
+                            copy and pasted.
+                        </p>
+
+                        <h5 className='flex flex-wrap justify-center text-center mt-5'>
+                            Technologies used:
+                        </h5>
+
+                        <ThemeProvider theme={theme} className='flex-column flex-wrap justify-center'>
+
+                            <div className='justify-center mt-2'>
+                                <Chip label="Javascript" color='secondary'/>
+                            </div>
+
+                        </ThemeProvider>
+
+                    </div>
                         
                     <div className='flex-column'>
                         <img src={PasswordGeneratorPhoto} className='border-solid border-2 border-neutral-800 border-b-none rounded-t-lg' style={{ height: 320, width: 384}}/>
