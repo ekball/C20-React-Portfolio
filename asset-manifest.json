@@ -1,24 +1,30 @@
 {
   "files": {
-    "main.css": "/C20-React-Portfolio/static/css/main.069f1649.css",
-    "main.js": "/C20-React-Portfolio/static/js/main.37265a90.js",
+    "main.css": "/C20-React-Portfolio/static/css/main.290b90fd.css",
+    "main.js": "/C20-React-Portfolio/static/js/main.ae22e682.js",
     "static/js/787.df8fb09e.chunk.js": "/C20-React-Portfolio/static/js/787.df8fb09e.chunk.js",
     "static/media/pokebuff-screenshot.png": "/C20-React-Portfolio/static/media/pokebuff-screenshot.45b43deb6ed7596e1f45.png",
+    "static/media/ember3.jpeg": "/C20-React-Portfolio/static/media/ember3.2692adaffb2cd0052be2.jpeg",
+    "static/media/ember4.jpeg": "/C20-React-Portfolio/static/media/ember4.ca3729d6afe40093868a.jpeg",
+    "static/media/ember-profile.jpeg": "/C20-React-Portfolio/static/media/ember-profile.8510cb308cce14ef9871.jpeg",
+    "static/media/ember1.jpeg": "/C20-React-Portfolio/static/media/ember1.17e78aa6e34aabd7f4bc.jpeg",
+    "static/media/body-background.jpeg": "/C20-React-Portfolio/static/media/body-background.c4c4e0297874cc7c5f82.jpeg",
     "static/media/README-generator-screenshot.png": "/C20-React-Portfolio/static/media/README-generator-screenshot.da98a70328134cfb82d2.png",
     "static/media/profile-picture.jpeg": "/C20-React-Portfolio/static/media/profile-picture.9e96591af8c7b48a2846.jpeg",
+    "static/media/ember2.jpeg": "/C20-React-Portfolio/static/media/ember2.0d027b508a3e02eb99f9.jpeg",
+    "static/media/resume.pdf": "/C20-React-Portfolio/static/media/resume.6fc88f6ff45079c669f2.pdf",
     "static/media/movie-match-screenshot.png": "/C20-React-Portfolio/static/media/movie-match-screenshot.8a0d851aa6ef5812bc42.png",
-    "static/media/avatar.jpeg": "/C20-React-Portfolio/static/media/avatar.7a65a64df9ba27844a4b.jpeg",
     "static/media/weather-dashboard-screenshot.png": "/C20-React-Portfolio/static/media/weather-dashboard-screenshot.7f0117e576a502511ad4.png",
-    "static/media/notetaker-screenshot.png": "/C20-React-Portfolio/static/media/notetaker-screenshot.87779223be1a53d468f8.png",
     "static/media/password-generator-screenshot.png": "/C20-React-Portfolio/static/media/password-generator-screenshot.5fde300022ccfbbd47cd.png",
     "static/media/media-gems-screenshot.png": "/C20-React-Portfolio/static/media/media-gems-screenshot.939c484e0950e97ef6df.png",
+    "static/media/bootcampbadge.png": "/C20-React-Portfolio/static/media/bootcampbadge.6098f47a31c8c8c6459b.png",
     "index.html": "/C20-React-Portfolio/index.html",
-    "main.069f1649.css.map": "/C20-React-Portfolio/static/css/main.069f1649.css.map",
-    "main.37265a90.js.map": "/C20-React-Portfolio/static/js/main.37265a90.js.map",
+    "main.290b90fd.css.map": "/C20-React-Portfolio/static/css/main.290b90fd.css.map",
+    "main.ae22e682.js.map": "/C20-React-Portfolio/static/js/main.ae22e682.js.map",
     "787.df8fb09e.chunk.js.map": "/C20-React-Portfolio/static/js/787.df8fb09e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.069f1649.css",
-    "static/js/main.37265a90.js"
+    "static/css/main.290b90fd.css",
+    "static/js/main.ae22e682.js"
   ]
 }
