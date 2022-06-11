@@ -11,6 +11,8 @@ import Button from '@mui/material/Button';
 import List from '@mui/material/List';
 import PetsIcon from '@mui/icons-material/Pets';
 import ListItem from '@mui/material/ListItem';
+import { orange } from '@mui/material/colors';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 
 function About() {
@@ -33,7 +35,7 @@ function About() {
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
-      className='sidebar h-full w-96'
+      className='sidebar h-full w-96 projects'
     >
       <List className='flex-column'>
           <ListItem className='justify-center'>
@@ -54,9 +56,19 @@ function About() {
     </Box>
   );
 
+  const theme = createTheme({
+    palette: {
+      primary: {
+        main: '#000000',
+      },
+      secondary: {
+        main: '#FED7AA',
+      }
+    }
+  });
+
   return (
     
-
     <section className='about-section flex-wrap flex justify-evenly align-center content-around m-12'>
 
       <div className='flex justify-evenly align-center'>
@@ -64,14 +76,18 @@ function About() {
         <div className='flex-column'>
 
           <div className='inline-flex justify-center pl-5'>
-            <img src={ProfilePicture} className='h-48 mr-2'/>
-            <img src={EmberProfile} className='h-48 ml-2'/>
+            <img src={ProfilePicture} className='h-48 mr-2 rounded-lg border-solid border-2 border-black'/>
+            <img src={EmberProfile} className='h-48 ml-2 rounded-lg border-solid border-2 border-black'/>
           </div>
 
           <div className='p-5'>
             {['Click here to learn about Ember'].map((anchor) => (
               <React.Fragment key={anchor}>
-                <Button onClick={toggleDrawer(anchor, true)} variant='contained'startIcon={<PetsIcon />} endIcon={<PetsIcon />}>{anchor}</Button>
+                <ThemeProvider theme={theme}>
+                  <Button onClick={toggleDrawer(anchor, true)} variant='contained' color='secondary' startIcon={<PetsIcon />} endIcon={<PetsIcon />}>
+                    {anchor}
+                  </Button>
+                </ThemeProvider>
                 <Drawer
                   anchor={anchor}
                   open={state[anchor]}

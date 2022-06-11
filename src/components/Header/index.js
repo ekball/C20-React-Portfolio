@@ -22,7 +22,7 @@ function Header(props) {
 
                 <div className="justify-center pt-5 pb-5">
 
-                    <button className="hover:text-orange-400 border-none">
+                    <button className="hover:text-orange-300 border-none">
                         <a className="header-icons" href="https://github.com/ekball" target="_blank" rel="noreferrer">
                             <div className=''>
                                 <GitHubIcon sx={{ fontSize: 50 }} />
@@ -30,11 +30,11 @@ function Header(props) {
                         </a>
                     </button>
 
-                    <h1 className="title-name text-6xl mr-10 ml-10 mt-5 mb-5 text-orange-300">
+                    <h1 className="title-name text-6xl mr-10 ml-10 mt-5 text-orange-300">
                         Erick Kyles Ball
                     </h1> 
 
-                    <button className="hover:text-orange-400 border-none">
+                    <button className="hover:text-orange-300 border-none">
                         <a className="header-icons" href="https://www.linkedin.com/in/kyles-ball" target="_blank" rel="noreferrer">
                             <div className=''><LinkedInIcon sx={{ fontSize: 50 }} />
                             </div>
