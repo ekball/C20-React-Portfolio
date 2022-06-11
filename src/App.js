@@ -35,7 +35,7 @@ function App() {
         <Divider className='pt-20 text-3xl text-orange-300' id="projects">Projects</Divider>
         <Projects/>
 
-        <Divider className='pt-20 text-3xl text-orange-300' id="resume">Resume and Skills</Divider>
+        <Divider className='pt-20 text-3xl text-orange-300' id="resume">Resume</Divider>
         <Resume/>
 
         <Divider className='pt-20 text-3xl text-orange-300' id="contact">Contact Me</Divider>
