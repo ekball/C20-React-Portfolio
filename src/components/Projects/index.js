@@ -14,8 +14,12 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import Divider from '@mui/material/Divider';
 import Chip from '@mui/material/Chip';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import Snackbar from '@mui/material/Snackbar';
+import MuiAlert from '@mui/material/Alert';
 
-
+const Alert = React.forwardRef(function Alert(props, ref) {
+    return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+});
 
 function Projects () {
 
@@ -35,6 +39,22 @@ function Projects () {
             }
         }
     });
+
+    const [state, setState] = React.useState({
+        open: false,
+        vertical: 'top',
+        horizontal: 'center',
+      });
+    
+      const { vertical, horizontal, open } = state;
+    
+      const handleClick = (newState) => () => {
+        setState({ open: true, ...newState });
+      };
+    
+      const handleClose = () => {
+        setState({ ...state, open: false });
+      };
 
     return (
         
@@ -315,10 +335,15 @@ function Projects () {
                             <BottomNavigation sx={{ width: 380, bottom: 0, left: 0, right: 0 }} value={value} onChange={handleChange} showLabels>
 
                                 <BottomNavigationAction
-                                    href="https://fierce-mesa-57913.herokuapp.com/"
+                                    // href="https://fierce-mesa-57913.herokuapp.com/"
+                                    href=""
                                     label="Deployed Site"
                                     value="deployed site"
                                     icon={<PreviewIcon/>}
+                                    onClick={handleClick({
+                                        vertical: 'top',
+                                        horizontal: 'center',
+                                    })}
                                 />
                                 <Divider orientation="vertical" variant="middle" flexItem/>
                                 <BottomNavigationAction
@@ -327,6 +352,20 @@ function Projects () {
                                     value="github"
                                     icon={<GitHubIcon/>}
                                 />
+                                <Snackbar
+                                    anchorOrigin={{ vertical, horizontal }}
+                                    open={open}
+                                    onClose={handleClose}
+                                    message="This website is currently undergoing maintenance."
+                                    key={vertical + horizontal}
+                                    color='success'
+                                    autoHideDuration={6000}
+                                >
+                                    <Alert onClose={handleClose} severity="info" sx={{ width: '100%' }}>
+                                        This website is currently undergoing maintenance.
+                                    </Alert>
+                                </Snackbar>
+                                
                             </BottomNavigation>
 
                         </div>                        
