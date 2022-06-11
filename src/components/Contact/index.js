@@ -1,87 +1,64 @@
-import React, { useState } from 'react';
-import { validateEmail } from '../../utils/helpers';
+import * as React from 'react';
+import BottomNavigation from '@mui/material/BottomNavigation';
+import BottomNavigationAction from '@mui/material/BottomNavigationAction';
+import LinkedInIcon from '@mui/icons-material/LinkedIn'; 
+import EmailIcon from '@mui/icons-material/Email';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import Button from '@mui/material/Button';
+
 
 function Contact() {
 
-    // set the initial state of the form to all blanks
-    const [formState, setFormState] = useState({ name: '', email: '', message: '' });
+    const [value, setValue] = React.useState('recents');
 
-    // set the initial values of the error messages
-    const [errorMessage, setErrorMessage] = useState('');
-
-    // set the form to accept name, email, and message fields
-    const { name, email, message } = formState;
-
-    // submission handler
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // if there is no error message printed out, then change the value of the section
-        if (!errorMessage) {
-        setFormState({ [e.target.name]: e.target.value });
-        console.log('Form', formState);
-        }
+    const handleChange = (event, newValue) => {
+        setValue(newValue);
     };
 
-    const handleChange = (e) => {
-        // when the email box is typed in, check the regex helper to see if it is a valid email
-        if (e.target.name === 'email') {
-        const isValid = validateEmail(e.target.value);
-
-            // if its not, make user try again
-            if (!isValid) {
-                setErrorMessage('This email is invalid; please try a different one.');
-            } 
-            // otherwise, set the error message as an empty string
-            else {
-                setErrorMessage('');
-            }
-        } 
-        // otherwise, if there is nothing typed in the field, make user input something & print error message
-        else {
-
-            if (!e.target.value.length) {
-                setErrorMessage(`${e.target.name} needs to be filled out.`);
-            } 
-            else {
-                setErrorMessage('');
+    const theme = createTheme({
+        palette: {
+            primary: {
+                main: '#000000',
+            },
+            secondary: {
+                main: '#FED7AA',
             }
         }
-    };
+    });
 
     return (
-        <section className='contact-section content-around'>
-
-            <h1 className='contact-title flex justify-center text-xl p-5'>Contact</h1>
-
-            <form onSubmit={handleSubmit}>
-                {/* subsection for name input */}
-                <div className='contact-section flex justify-center text-xl p-5'>
-                    <label htmlFor="name" >Name: </label>
-                    <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
+        <section className='flex h-fit justify-around m-10'>
+   
+                <div className=''>
+                    <ThemeProvider theme={theme}>
+                        <Button variant='contained' size="large" color="secondary" className="animate-bounce h-fit" startIcon={<EmailIcon/>} endIcon={<EmailIcon/>}>
+                            <a href='mailto:ekylesball@gmail.com' className="flex justify-center p-5" >
+                                Email me at ekylesball@gmail.com
+                            </a>
+                        </Button>
+                    </ThemeProvider>
                 </div>
 
-                {/* subsection for email input */}
-                <div className='contact-section flex justify-center text-lg p-5'>
-                    <label htmlFor="email" >Email: </label>
-                    <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
+                <div className=''>
+                    <ThemeProvider theme={theme}>
+                        <Button variant='contained' size="large" color="secondary" className="animate-bounce h-fit" startIcon={<GitHubIcon/>} endIcon={<GitHubIcon/>}>
+                            <a href="https://github.com/ekball" className="flex justify-center p-5" >
+                                Link to my Github Profile
+                            </a>
+                        </Button>
+                    </ThemeProvider>
                 </div>
 
-                {/* subsection to for message input */}
-                <div className='contact-section message-box-title flex justify-center text-lg p-5'>
-                    <label htmlFor="message" >Message: </label>
-                    <textarea name="message" rows="3" defaultValue={message} onBlur={handleChange} />
+                <div className=''>
+                    <ThemeProvider theme={theme}>
+                        <Button variant='contained' size="large" color="secondary" className="animate-bounce h-fit" startIcon={<LinkedInIcon/>} endIcon={<LinkedInIcon/>}>
+                            <a href="https://www.linkedin.com/in/kyles-ball" className="flex justify-center p-5" >
+                                Link to my LinkedIn Profile
+                            </a>
+                        </Button>
+                    </ThemeProvider>
                 </div>
-
-                {/* subsection to print error message */}
-                {errorMessage && (
-                <div className='contact-errors flex justify-center text-lg p-5'>
-                    <p className="error-text">{errorMessage}</p>
-                </div>
-                )}
-
-                <button className='contact-button text-lg p-5 hover:text-orange-500 font-bold flex justify-center m-auto' type="submit">Send</button>
-                
-            </form>
 
         </section>
     );
