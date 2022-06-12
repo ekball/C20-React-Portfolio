@@ -71,13 +71,13 @@ function About() {
     
     <section className='about-section flex-wrap flex justify-evenly align-center content-around m-12'>
 
-      <div className='flex justify-evenly align-center'>
+      <div className='flex justify-evenly align-center about-pieces'>
 
         <div className='flex-column'>
 
-          <div className='inline-flex justify-center pl-5'>
-            <img src={ProfilePicture} className='h-48 mr-2 rounded-lg border-solid border-2 border-black'/>
-            <img src={EmberProfile} className='h-48 ml-2 rounded-lg border-solid border-2 border-black'/>
+          <div className='inline-flex justify-center pl-5 about-images'>
+            <img src={ProfilePicture} className='h-48 mr-2 rounded-lg border-solid border-2 border-black about-profile-pic'/>
+            <img src={EmberProfile} className='h-48 ml-2 rounded-lg border-solid border-2 border-black about-ember-pic'/>
           </div>
 
           <div className='p-5'>
@@ -100,13 +100,13 @@ function About() {
           </div>
 
         </div>
-
-        <p className='flex flex-wrap w-1/2 leading-loose'>
-        Full stack developer proficient in building websites from a user story, preparing a minimally viable product, and then fine- tuning the small details into an efficiently running complete site. 
-        Able to efficiently work in a group as well as independently in order to complete tasks on time. 
-        Prior experience gained through working as a Dog Trainer allows the delegation of tasks if necessary, while also multitasking across various duties. 
-        Excel in solving unique and complex issues.
-        </p>
+        
+          <p className='flex flex-wrap w-1/2 leading-loose'>
+          Full stack developer proficient in building websites from a user story, preparing a minimally viable product, and then fine- tuning the small details into an efficiently running complete site. 
+          Able to efficiently work in a group as well as independently in order to complete tasks on time. 
+          Prior experience gained through working as a Dog Trainer allows the delegation of tasks if necessary, while also multitasking across various duties. 
+          Excel in solving unique and complex issues.
+          </p>
 
       </div>
 

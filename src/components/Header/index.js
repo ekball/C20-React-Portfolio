@@ -18,13 +18,13 @@ function Header(props) {
 
         <Headroom upTolerance={30} downTolerance={30}>
 
-            <header className="">
+            <header className="justify-between header-card">
 
-                <div className="justify-center pt-5 pb-5">
+                <div className="justify-center pt-5 pb-5 header-section">
 
                     <button className="hover:text-orange-300 border-none">
                         <a className="header-icons" href="https://github.com/ekball" target="_blank" rel="noreferrer">
-                            <div className=''>
+                            <div className='header-icon'>
                                 <GitHubIcon sx={{ fontSize: 50 }} />
                             </div>
                         </a>
@@ -36,7 +36,8 @@ function Header(props) {
 
                     <button className="hover:text-orange-300 border-none">
                         <a className="header-icons" href="https://www.linkedin.com/in/kyles-ball" target="_blank" rel="noreferrer">
-                            <div className=''><LinkedInIcon sx={{ fontSize: 50 }} />
+                            <div className='header-icon'>
+                                <LinkedInIcon sx={{ fontSize: 50 }} />
                             </div>
                         </a>
                     </button>

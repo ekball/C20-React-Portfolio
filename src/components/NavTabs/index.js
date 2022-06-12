@@ -18,63 +18,69 @@ function NavTabs({ currentPage, handlePageChange }) {
 
   return (
 
-      <nav className="flex justify-evenly pb-5">
-        <Link to="about-me"
-          isDynamic={true}
-          ignoreCancelEvents={true}
-          smooth={true}
-          duration={750}
-          offset={-200}>                    
-              <div className='\'>
-                <ThemeProvider theme={theme}>
-                  <Button className='hover:text-orange-300' size="large" variant="outlined">
-                    About
-                  </Button>
-                </ThemeProvider>
-              </div>
-        </Link>
-        <Link to="projects"
-          isDynamic={true}
-          ignoreCancelEvents={true}
-          smooth={true}
-          duration={750}
-          offset={-150}>                    
-             <div className=''>
-                <ThemeProvider theme={theme}>
-                  <Button className='hover:text-orange-300' size="large" variant="outlined">
-                    Projects
-                  </Button>
-                </ThemeProvider>
-              </div>
-        </Link>
-        <Link to="resume"
-           isDynamic={true}
-          ignoreCancelEvents={true}
-          smooth={true}
-          duration={750}
-          offset={-150}>                    
+      <nav className="flex justify-evenly pb-5 nav-buttons">
+
+        <div className='nav-buttons-left'>
+          <Link to="about-me"
+            isDynamic={true}
+            ignoreCancelEvents={true}
+            smooth={true}
+            duration={750}
+            offset={-200}>                    
+                <div className='\'>
+                  <ThemeProvider theme={theme}>
+                    <Button className='hover:text-orange-300' size="large" variant="outlined">
+                      About
+                    </Button>
+                  </ThemeProvider>
+                </div>
+          </Link>
+          <Link to="projects"
+            isDynamic={true}
+            ignoreCancelEvents={true}
+            smooth={true}
+            duration={750}
+            offset={-150}>                    
               <div className=''>
-                <ThemeProvider theme={theme}>
-                  <Button className='hover:text-orange-300' size="large" variant="outlined">
-                    Resume
-                  </Button>
-                </ThemeProvider>
-              </div>
-        </Link>
-        <Link to="contact"
-          isDynamic={true}
-          ignoreCancelEvents={true}
-          smooth={true}
-          duration={750}
-          offset={-150}>                    
-              <div className=''>
-                <ThemeProvider theme={theme}>
-                  <Button className='hover:text-orange-300' size="large" variant="outlined">
-                    Contact
-                  </Button>
-                </ThemeProvider>
-              </div>
-        </Link>
+                  <ThemeProvider theme={theme}>
+                    <Button className='hover:text-orange-300' size="large" variant="outlined">
+                      Projects
+                    </Button>
+                  </ThemeProvider>
+                </div>
+          </Link>
+        </div>
+
+        <div className='nav-buttons-right'>
+          <Link to="resume"
+            isDynamic={true}
+            ignoreCancelEvents={true}
+            smooth={true}
+            duration={750}
+            offset={-150}>                    
+                <div className=''>
+                  <ThemeProvider theme={theme}>
+                    <Button className='hover:text-orange-300' size="large" variant="outlined">
+                      Resume
+                    </Button>
+                  </ThemeProvider>
+                </div>
+          </Link>
+          <Link to="contact"
+            isDynamic={true}
+            ignoreCancelEvents={true}
+            smooth={true}
+            duration={750}
+            offset={-150}>                    
+                <div className=''>
+                  <ThemeProvider theme={theme}>
+                    <Button className='hover:text-orange-300' size="large" variant="outlined">
+                      Contact
+                    </Button>
+                  </ThemeProvider>
+                </div>
+          </Link>
+        </div>
     </nav>
 
       // <ul className="flex justify-evenly pb-5">
