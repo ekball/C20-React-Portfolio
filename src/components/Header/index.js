@@ -16,7 +16,7 @@ function Header(props) {
 
     return(
 
-        <Headroom upTolerance={30} downTolerance={30}>
+        <Headroom upTolerance={30} downTolerance={30} className="total-header">
 
             <header className="justify-between header-card">
 
